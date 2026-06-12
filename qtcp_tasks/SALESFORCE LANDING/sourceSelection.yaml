@@ -1,0 +1,10 @@
+sourceConnection: '{{task.salesforce_landing-_h7t.sourceConnection}}'
+explicitlySelected:
+  - name: account
+    type: TABLE
+  - name: contact
+    type: TABLE
+  - name: opportunity
+    type: TABLE
+  - name: user
+    type: TABLE

@@ -1,0 +1,15 @@
+properties:
+  name: SALESFORCE STORAGE
+  id: salesforce_storage-_h7u
+  type: STORAGE
+settings:
+  ddlHandlingPolicy:
+    renameTable: IGNORE
+    renameColumn: IGNORE
+  artifactsLocation:
+    internalSchema: '{{task.salesforce_storage-_h7u.internalSchema}}'
+    taskSchema: '{{task.salesforce_storage-_h7u.taskSchema}}'
+    databaseName: '{{task.salesforce_storage-_h7u.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.salesforce_storage-_h7u.warehouseName}}'

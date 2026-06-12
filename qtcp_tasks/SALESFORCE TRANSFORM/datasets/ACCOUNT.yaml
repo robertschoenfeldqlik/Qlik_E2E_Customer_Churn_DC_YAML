@@ -1,0 +1,833 @@
+properties:
+  id: account-iili
+  name: ACCOUNT
+  inputDatasets:
+    - datasetId: account-_h7w
+      name: ACCOUNT
+      taskId: salesforce_storage-_h7u
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: ACCOUNT
+    columns:
+      - name: ACCOUNT_NUMBER
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: account_number
+        properties:
+          documentMetadata: false
+      - name: ACTIVE_C
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 3
+          originalTypeFull: NVARCHAR(3)
+        id: active_c
+        properties:
+          documentMetadata: false
+      - name: ANNUAL_REVENUE
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          scale: 10
+          originalTypeFull: NUMBER(38,10)
+        id: annual_revenue
+        properties:
+          documentMetadata: false
+      - name: BILLING_ADDRESS_CITY
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 13
+          originalTypeFull: NVARCHAR(13)
+        id: billing_address_city
+        properties:
+          documentMetadata: false
+      - name: BILLING_ADDRESS_COUNTRY
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: billing_address_country
+        properties:
+          documentMetadata: false
+      - name: BILLING_ADDRESS_POSTAL_CODE
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: billing_address_postal_code
+        properties:
+          documentMetadata: false
+      - name: BILLING_ADDRESS_STATE
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 9
+          originalTypeFull: NVARCHAR(9)
+        id: billing_address_state
+        properties:
+          documentMetadata: false
+      - name: BILLING_ADDRESS_STREET
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 101
+          originalTypeFull: NVARCHAR(101)
+        id: billing_address_street
+        properties:
+          documentMetadata: false
+      - name: BILLING_CITY
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 13
+          originalTypeFull: NVARCHAR(13)
+        id: billing_city
+        properties:
+          documentMetadata: false
+      - name: BILLING_COUNTRY
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: billing_country
+        properties:
+          documentMetadata: false
+      - name: BILLING_POSTAL_CODE
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: billing_postal_code
+        properties:
+          documentMetadata: false
+      - name: BILLING_STATE
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 9
+          originalTypeFull: NVARCHAR(9)
+        id: billing_state
+        properties:
+          documentMetadata: false
+      - name: BILLING_STREET
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 101
+          originalTypeFull: NVARCHAR(101)
+        id: billing_street
+        properties:
+          documentMetadata: false
+      - name: CLEAN_STATUS
+        ordinal: 14
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 7
+          originalTypeFull: NVARCHAR(7)
+        id: clean_status
+        properties:
+          documentMetadata: false
+      - name: CREATED_BY_ID
+        ordinal: 15
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: created_by_id
+        properties:
+          documentMetadata: false
+      - name: CREATED_DATE
+        ordinal: 16
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: created_date
+        properties:
+          documentMetadata: false
+      - name: CUSTOMER_PRIORITY_C
+        ordinal: 17
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: customer_priority_c
+        properties:
+          documentMetadata: false
+      - name: DESCRIPTION
+        ordinal: 18
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 218
+          originalTypeFull: NVARCHAR(218)
+        id: description
+        properties:
+          documentMetadata: false
+      - name: FAX
+        ordinal: 19
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: fax
+        properties:
+          documentMetadata: false
+      - name: ACCOUNT_ID
+        ordinal: 20
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: id
+        properties:
+          documentMetadata: false
+      - name: INDUSTRY
+        ordinal: 21
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 14
+          originalTypeFull: NVARCHAR(14)
+        id: industry
+        properties:
+          documentMetadata: false
+      - name: IS_DELETED
+        ordinal: 22
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: is_deleted
+        properties:
+          documentMetadata: false
+      - name: LAST_MODIFIED_BY_ID
+        ordinal: 23
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: last_modified_by_id
+        properties:
+          documentMetadata: false
+      - name: LAST_MODIFIED_DATE
+        ordinal: 24
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: last_modified_date
+        properties:
+          documentMetadata: false
+      - name: NAME
+        ordinal: 25
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 35
+          originalTypeFull: NVARCHAR(35)
+        id: name
+        properties:
+          documentMetadata: false
+      - name: NUMBER_OF_EMPLOYEES
+        ordinal: 26
+        nullable: true
+        datatype:
+          type: INT8
+          originalTypeFull: BIGINT
+        id: number_of_employees
+        properties:
+          documentMetadata: false
+      - name: NUMBEROF_LOCATIONS_C
+        ordinal: 27
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          scale: 10
+          originalTypeFull: NUMBER(38,10)
+        id: numberof_locations_c
+        properties:
+          documentMetadata: false
+      - name: OWNER_ID
+        ordinal: 28
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: owner_id
+        properties:
+          documentMetadata: false
+      - name: OWNERSHIP
+        ordinal: 29
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 7
+          originalTypeFull: NVARCHAR(7)
+        id: ownership
+        properties:
+          documentMetadata: false
+      - name: PHONE
+        ordinal: 30
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: phone
+        properties:
+          documentMetadata: false
+      - name: PHOTO_URL
+        ordinal: 31
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 41
+          originalTypeFull: NVARCHAR(41)
+        id: photo_url
+        properties:
+          documentMetadata: false
+      - name: RATING
+        ordinal: 32
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 4
+          originalTypeFull: NVARCHAR(4)
+        id: rating
+        properties:
+          documentMetadata: false
+      - name: SHIPPING_ADDRESS_CITY
+        ordinal: 33
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: shipping_address_city
+        properties:
+          documentMetadata: false
+      - name: SHIPPING_ADDRESS_COUNTRY
+        ordinal: 34
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: shipping_address_country
+        properties:
+          documentMetadata: false
+      - name: SHIPPING_ADDRESS_POSTAL_CODE
+        ordinal: 35
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: shipping_address_postal_code
+        properties:
+          documentMetadata: false
+      - name: SHIPPING_ADDRESS_STATE
+        ordinal: 36
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 2
+          originalTypeFull: NVARCHAR(2)
+        id: shipping_address_state
+        properties:
+          documentMetadata: false
+      - name: SHIPPING_ADDRESS_STREET
+        ordinal: 37
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 101
+          originalTypeFull: NVARCHAR(101)
+        id: shipping_address_street
+        properties:
+          documentMetadata: false
+      - name: SHIPPING_CITY
+        ordinal: 38
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: shipping_city
+        properties:
+          documentMetadata: false
+      - name: SHIPPING_COUNTRY
+        ordinal: 39
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: shipping_country
+        properties:
+          documentMetadata: false
+      - name: SHIPPING_POSTAL_CODE
+        ordinal: 40
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: shipping_postal_code
+        properties:
+          documentMetadata: false
+      - name: SHIPPING_STATE
+        ordinal: 41
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 2
+          originalTypeFull: NVARCHAR(2)
+        id: shipping_state
+        properties:
+          documentMetadata: false
+      - name: SHIPPING_STREET
+        ordinal: 42
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 101
+          originalTypeFull: NVARCHAR(101)
+        id: shipping_street
+        properties:
+          documentMetadata: false
+      - name: SIC
+        ordinal: 43
+        nullable: true
+        datatype:
+          type: INT8
+          originalTypeFull: BIGINT
+        id: sic
+        properties:
+          documentMetadata: false
+      - name: SLA_C
+        ordinal: 44
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: sla_c
+        properties:
+          documentMetadata: false
+      - name: SLAEXPIRATION_DATE_C
+        ordinal: 45
+        nullable: true
+        datatype:
+          type: DATE
+          originalTypeFull: DATE
+        id: slaexpiration_date_c
+        properties:
+          documentMetadata: false
+      - name: SLASERIAL_NUMBER_C
+        ordinal: 46
+        nullable: true
+        datatype:
+          type: INT8
+          originalTypeFull: BIGINT
+        id: slaserial_number_c
+        properties:
+          documentMetadata: false
+      - name: SYSTEM_MODSTAMP
+        ordinal: 47
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: system_modstamp
+        properties:
+          documentMetadata: false
+      - name: TICKER_SYMBOL
+        ordinal: 48
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 4
+          originalTypeFull: NVARCHAR(4)
+        id: ticker_symbol
+        properties:
+          documentMetadata: false
+      - name: TYPE
+        ordinal: 49
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: type
+        properties:
+          documentMetadata: false
+      - name: UPSELL_OPPORTUNITY_C
+        ordinal: 50
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: upsell_opportunity_c
+        properties:
+          documentMetadata: false
+      - name: WEBSITE
+        ordinal: 51
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 27
+          originalTypeFull: NVARCHAR(27)
+        id: website
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: account-_h7w
+        name: account
+        taskId: salesforce_storage-_h7u
+      mappingFields:
+        - columnId: account_number
+          expression:
+            expressionStatement: ${ACCOUNT_NUMBER}
+            alias:
+              - name: ACCOUNT_NUMBER
+                value: ACCOUNT_NUMBER
+        - columnId: active_c
+          expression:
+            expressionStatement: ${ACTIVE_C}
+            alias:
+              - name: ACTIVE_C
+                value: ACTIVE_C
+        - columnId: annual_revenue
+          expression:
+            expressionStatement: ${ANNUAL_REVENUE}
+            alias:
+              - name: ANNUAL_REVENUE
+                value: ANNUAL_REVENUE
+        - columnId: billing_address_city
+          expression:
+            expressionStatement: ${BILLING_ADDRESS_CITY}
+            alias:
+              - name: BILLING_ADDRESS_CITY
+                value: BILLING_ADDRESS_CITY
+        - columnId: billing_address_country
+          expression:
+            expressionStatement: ${BILLING_ADDRESS_COUNTRY}
+            alias:
+              - name: BILLING_ADDRESS_COUNTRY
+                value: BILLING_ADDRESS_COUNTRY
+        - columnId: billing_address_postal_code
+          expression:
+            expressionStatement: ${BILLING_ADDRESS_POSTAL_CODE}
+            alias:
+              - name: BILLING_ADDRESS_POSTAL_CODE
+                value: BILLING_ADDRESS_POSTAL_CODE
+        - columnId: billing_address_state
+          expression:
+            expressionStatement: ${BILLING_ADDRESS_STATE}
+            alias:
+              - name: BILLING_ADDRESS_STATE
+                value: BILLING_ADDRESS_STATE
+        - columnId: billing_address_street
+          expression:
+            expressionStatement: ${BILLING_ADDRESS_STREET}
+            alias:
+              - name: BILLING_ADDRESS_STREET
+                value: BILLING_ADDRESS_STREET
+        - columnId: billing_city
+          expression:
+            expressionStatement: ${BILLING_CITY}
+            alias:
+              - name: BILLING_CITY
+                value: BILLING_CITY
+        - columnId: billing_country
+          expression:
+            expressionStatement: ${BILLING_COUNTRY}
+            alias:
+              - name: BILLING_COUNTRY
+                value: BILLING_COUNTRY
+        - columnId: billing_postal_code
+          expression:
+            expressionStatement: ${BILLING_POSTAL_CODE}
+            alias:
+              - name: BILLING_POSTAL_CODE
+                value: BILLING_POSTAL_CODE
+        - columnId: billing_state
+          expression:
+            expressionStatement: ${BILLING_STATE}
+            alias:
+              - name: BILLING_STATE
+                value: BILLING_STATE
+        - columnId: billing_street
+          expression:
+            expressionStatement: ${BILLING_STREET}
+            alias:
+              - name: BILLING_STREET
+                value: BILLING_STREET
+        - columnId: clean_status
+          expression:
+            expressionStatement: ${CLEAN_STATUS}
+            alias:
+              - name: CLEAN_STATUS
+                value: CLEAN_STATUS
+        - columnId: created_by_id
+          expression:
+            expressionStatement: ${CREATED_BY_ID}
+            alias:
+              - name: CREATED_BY_ID
+                value: CREATED_BY_ID
+        - columnId: created_date
+          expression:
+            expressionStatement: ${CREATED_DATE}
+            alias:
+              - name: CREATED_DATE
+                value: CREATED_DATE
+        - columnId: customer_priority_c
+          expression:
+            expressionStatement: ${CUSTOMER_PRIORITY_C}
+            alias:
+              - name: CUSTOMER_PRIORITY_C
+                value: CUSTOMER_PRIORITY_C
+        - columnId: description
+          expression:
+            expressionStatement: ${DESCRIPTION}
+            alias:
+              - name: DESCRIPTION
+                value: DESCRIPTION
+        - columnId: fax
+          expression:
+            expressionStatement: ${FAX}
+            alias:
+              - name: FAX
+                value: FAX
+        - columnId: id
+          expression:
+            expressionStatement: ${ACCOUNT_ID}
+            alias:
+              - name: ACCOUNT_ID
+                value: ACCOUNT_ID
+        - columnId: industry
+          expression:
+            expressionStatement: ${INDUSTRY}
+            alias:
+              - name: INDUSTRY
+                value: INDUSTRY
+        - columnId: is_deleted
+          expression:
+            expressionStatement: ${IS_DELETED}
+            alias:
+              - name: IS_DELETED
+                value: IS_DELETED
+        - columnId: last_modified_by_id
+          expression:
+            expressionStatement: ${LAST_MODIFIED_BY_ID}
+            alias:
+              - name: LAST_MODIFIED_BY_ID
+                value: LAST_MODIFIED_BY_ID
+        - columnId: last_modified_date
+          expression:
+            expressionStatement: ${LAST_MODIFIED_DATE}
+            alias:
+              - name: LAST_MODIFIED_DATE
+                value: LAST_MODIFIED_DATE
+        - columnId: name
+          expression:
+            expressionStatement: ${NAME}
+            alias:
+              - name: NAME
+                value: NAME
+        - columnId: number_of_employees
+          expression:
+            expressionStatement: ${NUMBER_OF_EMPLOYEES}
+            alias:
+              - name: NUMBER_OF_EMPLOYEES
+                value: NUMBER_OF_EMPLOYEES
+        - columnId: numberof_locations_c
+          expression:
+            expressionStatement: ${NUMBEROF_LOCATIONS_C}
+            alias:
+              - name: NUMBEROF_LOCATIONS_C
+                value: NUMBEROF_LOCATIONS_C
+        - columnId: owner_id
+          expression:
+            expressionStatement: ${OWNER_ID}
+            alias:
+              - name: OWNER_ID
+                value: OWNER_ID
+        - columnId: ownership
+          expression:
+            expressionStatement: ${OWNERSHIP}
+            alias:
+              - name: OWNERSHIP
+                value: OWNERSHIP
+        - columnId: phone
+          expression:
+            expressionStatement: ${PHONE}
+            alias:
+              - name: PHONE
+                value: PHONE
+        - columnId: photo_url
+          expression:
+            expressionStatement: ${PHOTO_URL}
+            alias:
+              - name: PHOTO_URL
+                value: PHOTO_URL
+        - columnId: rating
+          expression:
+            expressionStatement: ${RATING}
+            alias:
+              - name: RATING
+                value: RATING
+        - columnId: shipping_address_city
+          expression:
+            expressionStatement: ${SHIPPING_ADDRESS_CITY}
+            alias:
+              - name: SHIPPING_ADDRESS_CITY
+                value: SHIPPING_ADDRESS_CITY
+        - columnId: shipping_address_country
+          expression:
+            expressionStatement: ${SHIPPING_ADDRESS_COUNTRY}
+            alias:
+              - name: SHIPPING_ADDRESS_COUNTRY
+                value: SHIPPING_ADDRESS_COUNTRY
+        - columnId: shipping_address_postal_code
+          expression:
+            expressionStatement: ${SHIPPING_ADDRESS_POSTAL_CODE}
+            alias:
+              - name: SHIPPING_ADDRESS_POSTAL_CODE
+                value: SHIPPING_ADDRESS_POSTAL_CODE
+        - columnId: shipping_address_state
+          expression:
+            expressionStatement: ${SHIPPING_ADDRESS_STATE}
+            alias:
+              - name: SHIPPING_ADDRESS_STATE
+                value: SHIPPING_ADDRESS_STATE
+        - columnId: shipping_address_street
+          expression:
+            expressionStatement: ${SHIPPING_ADDRESS_STREET}
+            alias:
+              - name: SHIPPING_ADDRESS_STREET
+                value: SHIPPING_ADDRESS_STREET
+        - columnId: shipping_city
+          expression:
+            expressionStatement: ${SHIPPING_CITY}
+            alias:
+              - name: SHIPPING_CITY
+                value: SHIPPING_CITY
+        - columnId: shipping_country
+          expression:
+            expressionStatement: ${SHIPPING_COUNTRY}
+            alias:
+              - name: SHIPPING_COUNTRY
+                value: SHIPPING_COUNTRY
+        - columnId: shipping_postal_code
+          expression:
+            expressionStatement: ${SHIPPING_POSTAL_CODE}
+            alias:
+              - name: SHIPPING_POSTAL_CODE
+                value: SHIPPING_POSTAL_CODE
+        - columnId: shipping_state
+          expression:
+            expressionStatement: ${SHIPPING_STATE}
+            alias:
+              - name: SHIPPING_STATE
+                value: SHIPPING_STATE
+        - columnId: shipping_street
+          expression:
+            expressionStatement: ${SHIPPING_STREET}
+            alias:
+              - name: SHIPPING_STREET
+                value: SHIPPING_STREET
+        - columnId: sic
+          expression:
+            expressionStatement: ${SIC}
+            alias:
+              - name: SIC
+                value: SIC
+        - columnId: sla_c
+          expression:
+            expressionStatement: ${SLA_C}
+            alias:
+              - name: SLA_C
+                value: SLA_C
+        - columnId: slaexpiration_date_c
+          expression:
+            expressionStatement: ${SLAEXPIRATION_DATE_C}
+            alias:
+              - name: SLAEXPIRATION_DATE_C
+                value: SLAEXPIRATION_DATE_C
+        - columnId: slaserial_number_c
+          expression:
+            expressionStatement: ${SLASERIAL_NUMBER_C}
+            alias:
+              - name: SLASERIAL_NUMBER_C
+                value: SLASERIAL_NUMBER_C
+        - columnId: system_modstamp
+          expression:
+            expressionStatement: ${SYSTEM_MODSTAMP}
+            alias:
+              - name: SYSTEM_MODSTAMP
+                value: SYSTEM_MODSTAMP
+        - columnId: ticker_symbol
+          expression:
+            expressionStatement: ${TICKER_SYMBOL}
+            alias:
+              - name: TICKER_SYMBOL
+                value: TICKER_SYMBOL
+        - columnId: type
+          expression:
+            expressionStatement: ${TYPE}
+            alias:
+              - name: TYPE
+                value: TYPE
+        - columnId: upsell_opportunity_c
+          expression:
+            expressionStatement: ${UPSELL_OPPORTUNITY_C}
+            alias:
+              - name: UPSELL_OPPORTUNITY_C
+                value: UPSELL_OPPORTUNITY_C
+        - columnId: website
+          expression:
+            expressionStatement: ${WEBSITE}
+            alias:
+              - name: WEBSITE
+                value: WEBSITE
+      id: account_default_mapping-iilj
+      name: ACCOUNT_default_mapping
+      description: ''

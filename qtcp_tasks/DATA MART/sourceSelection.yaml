@@ -1,0 +1,5 @@
+includePatterns:
+  - sourceTask: transform-drwz
+    tablePattern: '%'
+  - sourceTask: salesforce_transform-aaqj
+    tablePattern: '%'

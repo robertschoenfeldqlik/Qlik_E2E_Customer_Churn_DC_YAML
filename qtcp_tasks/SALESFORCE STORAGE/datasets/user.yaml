@@ -1,0 +1,13 @@
+properties:
+  id: user-_h7z
+  name: user
+  inputDatasets:
+    - datasetId: user
+      taskId: salesforce_landing-_h7t
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: id
+      newColumnName: USER_ID
+      primaryKeyOrdinal: 1
+      nullable: false

@@ -1,0 +1,5 @@
+includePatterns:
+  - sourceTask: storage-0ivk
+    tablePattern: '%'
+  - sourceTask: demographics_storage-bx34
+    tablePattern: '%'

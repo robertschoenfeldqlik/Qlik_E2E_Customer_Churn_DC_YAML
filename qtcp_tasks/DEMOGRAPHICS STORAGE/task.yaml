@@ -1,0 +1,13 @@
+properties:
+  name: DEMOGRAPHICS STORAGE
+  id: demographics_storage-bx34
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.demographics_storage-bx34.internalSchema}}'
+    taskSchema: '{{task.demographics_storage-bx34.taskSchema}}'
+    databaseName: '{{task.demographics_storage-bx34.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.demographics_storage-bx34.warehouseName}}'

@@ -1,0 +1,12 @@
+properties:
+  name: CHURN TRANSFORM
+  id: transform-drwz
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-drwz.internalSchema}}'
+    taskSchema: '{{task.transform-drwz.taskSchema}}'
+    databaseName: '{{task.transform-drwz.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-drwz.warehouseName}}'

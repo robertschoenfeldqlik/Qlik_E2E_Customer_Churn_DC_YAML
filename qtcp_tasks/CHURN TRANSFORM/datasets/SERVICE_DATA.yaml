@@ -1,0 +1,116 @@
+properties:
+  id: service_data-kyi7
+  name: SERVICE_DATA
+  inputDatasets:
+    - datasetId: service_data-kyi1
+      name: SERVICE_DATA
+      taskId: storage-0ivk
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: SERVICE_DATA
+    columns:
+      - name: ACCOUNTID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 7
+          originalTypeFull: NVARCHAR(7)
+        id: accountid
+        properties:
+          documentMetadata: false
+      - name: SERVICERATING
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: servicerating
+        properties:
+          documentMetadata: false
+      - name: SERVICETICKETS
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: servicetickets
+        properties:
+          documentMetadata: false
+      - name: LASTSERVICEDATE
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: lastservicedate
+        properties:
+          documentMetadata: false
+      - name: LASTTICKET
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: lastticket
+        properties:
+          documentMetadata: false
+      - name: REVIEW
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 128
+          originalTypeFull: NVARCHAR(128)
+        id: review
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: service_data-kyi1
+        name: service_data
+        taskId: storage-0ivk
+      mappingFields:
+        - columnId: accountid
+          expression:
+            expressionStatement: ${ACCOUNTID}
+            alias:
+              - name: ACCOUNTID
+                value: ACCOUNTID
+        - columnId: servicerating
+          expression:
+            expressionStatement: ${SERVICERATING}
+            alias:
+              - name: SERVICERATING
+                value: SERVICERATING
+        - columnId: servicetickets
+          expression:
+            expressionStatement: ${SERVICETICKETS}
+            alias:
+              - name: SERVICETICKETS
+                value: SERVICETICKETS
+        - columnId: lastservicedate
+          expression:
+            expressionStatement: ${LASTSERVICEDATE}
+            alias:
+              - name: LASTSERVICEDATE
+                value: LASTSERVICEDATE
+        - columnId: lastticket
+          expression:
+            expressionStatement: ${LASTTICKET}
+            alias:
+              - name: LASTTICKET
+                value: LASTTICKET
+        - columnId: review
+          expression:
+            expressionStatement: ${REVIEW}
+            alias:
+              - name: REVIEW
+                value: REVIEW
+      id: service_data_default_mapping-d-kb
+      name: SERVICE_DATA_default_mapping
+      description: ''

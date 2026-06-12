@@ -1,0 +1,19 @@
+properties:
+  name: CHURN LANDING
+  id: churn_landing-wjkl
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.churn_landing-wjkl.taskSchema}}'
+      database: '{{task.churn_landing-wjkl.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+  ddlHandlingPolicy:
+    addColumn: IGNORE
+    createTable: IGNORE

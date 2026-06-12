@@ -1,0 +1,12 @@
+properties:
+  name: SALESFORCE TRANSFORM
+  id: salesforce_transform-aaqj
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.salesforce_transform-aaqj.internalSchema}}'
+    taskSchema: '{{task.salesforce_transform-aaqj.taskSchema}}'
+    databaseName: '{{task.salesforce_transform-aaqj.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.salesforce_transform-aaqj.warehouseName}}'

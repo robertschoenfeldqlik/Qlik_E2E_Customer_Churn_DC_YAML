@@ -1,0 +1,18 @@
+properties:
+  id: test-1ivk
+  name: test
+  inputDatasets:
+    - datasetId: account-_h7w
+      name: ACCOUNT
+      taskId: salesforce_storage-_h7u
+    - datasetId: contact-_h7x
+      name: CONTACT
+      taskId: salesforce_storage-_h7u
+  tableDef:
+    name: test
+    columns: []
+  customDatasetSettings:
+    customSql: {}
+    incremental: false
+mappings:
+  mappings: []

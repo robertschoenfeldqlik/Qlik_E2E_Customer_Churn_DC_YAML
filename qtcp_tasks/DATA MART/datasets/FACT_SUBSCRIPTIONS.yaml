@@ -1,0 +1,233 @@
+properties:
+  id: fact_subscriptions-kyjg
+  name: FACT_SUBSCRIPTIONS
+  inputDatasets:
+    - datasetId: subscriptions-drw1
+      name: SUBSCRIPTIONS
+      taskId: transform-drwz
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: FACT_SUBSCRIPTIONS
+    columns:
+      - name: ACCOUNTID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 7
+          originalTypeFull: NVARCHAR(7)
+        id: accountid
+      - name: REPEATCUSTOMER
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 3
+          originalTypeFull: NVARCHAR(3)
+        id: repeatcustomer
+      - name: PROMOTION
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 3
+          originalTypeFull: NVARCHAR(3)
+        id: promotion
+      - name: PLANTYPE
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 11
+          originalTypeFull: NVARCHAR(11)
+        id: plantype
+      - name: BASEFEE
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: basefee
+      - name: ADDITIONALFEATURESPEND
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: additionalfeaturespend
+      - name: NUMBEROFPENALTIES
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: numberofpenalties
+      - name: STARTDATE
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: startdate
+      - name: CANCELDATE
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: canceldate
+      - name: STARTMONTH
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 3
+          originalTypeFull: NVARCHAR(3)
+        id: startmonth
+      - name: STARTWEEK
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 3
+          originalTypeFull: NVARCHAR(3)
+        id: startweek
+      - name: CUSTOMERTENURE
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: customertenure
+    entityId: fact_subscriptions-kyjg
+  factDatasetSettings:
+    type: TRANSACTIONAL
+    rootDataEntityId:
+      datasetId: subscriptions-drw1
+      name: SUBSCRIPTIONS
+      taskId: transform-drwz
+    factDimension:
+      - name: DIM_DEMOGRAPHICS
+        dimension:
+          type: NONE
+          datasetId: dim_demographics-kyjh
+          taskId: data_mart-5anr
+        dimensionRelationshipPath: subscriptions_demographics_relation-drxg
+        dimensionRelationshipPathDisplayName: SUBSCRIPTIONS_DEMOGRAPHICS_relation
+        dimensionRelationshipPathShortName: ''
+      - name: DIM_USAGE_DATA
+        dimension:
+          type: NONE
+          datasetId: dim_usage_data-5ant
+          taskId: data_mart-5anr
+        dimensionRelationshipPath: subscriptions_usage_data_relation-5ano
+        dimensionRelationshipPathDisplayName: SUBSCRIPTIONS_USAGE_DATA_relation
+        dimensionRelationshipPathShortName: ''
+      - name: DIM_SENTIMENT_ANALYSIS
+        dimension:
+          type: NONE
+          datasetId: dim_sentiment_analysis-uyo5
+          taskId: data_mart-5anr
+        dimensionRelationshipPath: subscriptions_sentimentanalysis-gymz
+        dimensionRelationshipPathDisplayName: SUBSCRIPTIONS_SENTIMENTANALYSIS
+        dimensionRelationshipPathShortName: ''
+      - name: DIM_SERVICE_DATA
+        dimension:
+          type: NONE
+          datasetId: dim_service_data-eoxx
+          taskId: data_mart-5anr
+        dimensionRelationshipPath: subscriptions_servicedata-d-kc
+        dimensionRelationshipPathDisplayName: SUBSCRIPTIONS_SERVICEDATA
+        dimensionRelationshipPathShortName: ''
+    mapping:
+      columns:
+        - columnName: ACCOUNTID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ACCOUNTID}
+            alias:
+              - name: ACCOUNTID
+                value: ACCOUNTID
+        - columnName: REPEATCUSTOMER
+          type: NONE
+          expression:
+            expressionStatement: ${REPEATCUSTOMER}
+            alias:
+              - name: REPEATCUSTOMER
+                value: REPEATCUSTOMER
+        - columnName: PROMOTION
+          type: NONE
+          expression:
+            expressionStatement: ${PROMOTION}
+            alias:
+              - name: PROMOTION
+                value: PROMOTION
+        - columnName: PLANTYPE
+          type: NONE
+          expression:
+            expressionStatement: ${PLANTYPE}
+            alias:
+              - name: PLANTYPE
+                value: PLANTYPE
+        - columnName: BASEFEE
+          type: NONE
+          expression:
+            expressionStatement: ${BASEFEE}
+            alias:
+              - name: BASEFEE
+                value: BASEFEE
+        - columnName: ADDITIONALFEATURESPEND
+          type: NONE
+          expression:
+            expressionStatement: ${ADDITIONALFEATURESPEND}
+            alias:
+              - name: ADDITIONALFEATURESPEND
+                value: ADDITIONALFEATURESPEND
+        - columnName: NUMBEROFPENALTIES
+          type: NONE
+          expression:
+            expressionStatement: ${NUMBEROFPENALTIES}
+            alias:
+              - name: NUMBEROFPENALTIES
+                value: NUMBEROFPENALTIES
+        - columnName: STARTDATE
+          type: NONE
+          expression:
+            expressionStatement: ${STARTDATE}
+            alias:
+              - name: STARTDATE
+                value: STARTDATE
+        - columnName: CANCELDATE
+          type: NONE
+          expression:
+            expressionStatement: ${CANCELDATE}
+            alias:
+              - name: CANCELDATE
+                value: CANCELDATE
+        - columnName: STARTMONTH
+          type: NONE
+          expression:
+            expressionStatement: ${STARTMONTH}
+            alias:
+              - name: STARTMONTH
+                value: STARTMONTH
+        - columnName: STARTWEEK
+          type: NONE
+          expression:
+            expressionStatement: ${STARTWEEK}
+            alias:
+              - name: STARTWEEK
+                value: STARTWEEK
+        - columnName: CUSTOMERTENURE
+          type: NONE
+          expression:
+            expressionStatement: ${CUSTOMERTENURE}
+            alias:
+              - name: CUSTOMERTENURE
+                value: CUSTOMERTENURE
+    subtype: MODEL_BASED
+    materializedSource: false

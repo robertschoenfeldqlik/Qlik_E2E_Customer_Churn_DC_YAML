@@ -1,0 +1,604 @@
+properties:
+  id: fact_salesforce_opportunity-aaql
+  name: FACT_SALESFORCE_OPPORTUNITY
+  inputDatasets:
+    - datasetId: opportunity-3ap7
+      name: OPPORTUNITY
+      taskId: salesforce_transform-aaqj
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: FACT_SALESFORCE_OPPORTUNITY
+    columns:
+      - name: ACCOUNT_ID
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: account_id
+        properties:
+          documentMetadata: false
+      - name: AMOUNT
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          scale: 10
+          originalTypeFull: NUMBER(38,10)
+        id: amount
+        properties:
+          documentMetadata: false
+      - name: CLOSE_DATE
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: DATE
+          originalTypeFull: DATE
+        id: close_date
+        properties:
+          documentMetadata: false
+      - name: CREATED_BY_ID
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: created_by_id
+        properties:
+          documentMetadata: false
+      - name: CREATED_DATE
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: created_date
+        properties:
+          documentMetadata: false
+      - name: CURRENT_GENERATORS_C
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: current_generators_c
+        properties:
+          documentMetadata: false
+      - name: DELIVERY_INSTALLATION_STATUS_C
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 12
+          originalTypeFull: NVARCHAR(12)
+        id: delivery_installation_status_c
+        properties:
+          documentMetadata: false
+      - name: EXPECTED_REVENUE
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          scale: 10
+          originalTypeFull: NUMBER(38,10)
+        id: expected_revenue
+        properties:
+          documentMetadata: false
+      - name: FISCAL
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: fiscal
+        properties:
+          documentMetadata: false
+      - name: FISCAL_QUARTER
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: INT8
+          originalTypeFull: BIGINT
+        id: fiscal_quarter
+        properties:
+          documentMetadata: false
+      - name: FISCAL_YEAR
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: INT8
+          originalTypeFull: BIGINT
+        id: fiscal_year
+        properties:
+          documentMetadata: false
+      - name: FORECAST_CATEGORY
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: forecast_category
+        properties:
+          documentMetadata: false
+      - name: FORECAST_CATEGORY_NAME
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: forecast_category_name
+        properties:
+          documentMetadata: false
+      - name: HAS_OPEN_ACTIVITY
+        ordinal: 14
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: has_open_activity
+        properties:
+          documentMetadata: false
+      - name: HAS_OPPORTUNITY_LINE_ITEM
+        ordinal: 15
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: has_opportunity_line_item
+        properties:
+          documentMetadata: false
+      - name: HAS_OVERDUE_TASK
+        ordinal: 16
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: has_overdue_task
+        properties:
+          documentMetadata: false
+      - name: OPPORTUNITY_ID
+        ordinal: 17
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: id
+        properties:
+          documentMetadata: false
+      - name: IS_CLOSED
+        ordinal: 18
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: is_closed
+        properties:
+          documentMetadata: false
+      - name: IS_DELETED
+        ordinal: 19
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: is_deleted
+        properties:
+          documentMetadata: false
+      - name: IS_PRIVATE
+        ordinal: 20
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: is_private
+        properties:
+          documentMetadata: false
+      - name: IS_WON
+        ordinal: 21
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: is_won
+        properties:
+          documentMetadata: false
+      - name: LAST_MODIFIED_BY_ID
+        ordinal: 22
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: last_modified_by_id
+        properties:
+          documentMetadata: false
+      - name: LAST_MODIFIED_DATE
+        ordinal: 23
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: last_modified_date
+        properties:
+          documentMetadata: false
+      - name: LEAD_SOURCE
+        ordinal: 24
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 17
+          originalTypeFull: NVARCHAR(17)
+        id: lead_source
+        properties:
+          documentMetadata: false
+      - name: MAIN_COMPETITORS_C
+        ordinal: 25
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 34
+          originalTypeFull: NVARCHAR(34)
+        id: main_competitors_c
+        properties:
+          documentMetadata: false
+      - name: NAME
+        ordinal: 26
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 43
+          originalTypeFull: NVARCHAR(43)
+        id: name
+        properties:
+          documentMetadata: false
+      - name: ORDER_NUMBER_C
+        ordinal: 27
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: order_number_c
+        properties:
+          documentMetadata: false
+      - name: OWNER_ID
+        ordinal: 28
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: owner_id
+        properties:
+          documentMetadata: false
+      - name: PROBABILITY
+        ordinal: 29
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          scale: 10
+          originalTypeFull: NUMBER(38,10)
+        id: probability
+        properties:
+          documentMetadata: false
+      - name: STAGE_NAME
+        ordinal: 30
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: stage_name
+        properties:
+          documentMetadata: false
+      - name: SYSTEM_MODSTAMP
+        ordinal: 31
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: system_modstamp
+        properties:
+          documentMetadata: false
+      - name: TRACKING_NUMBER_C
+        ordinal: 32
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 12
+          originalTypeFull: NVARCHAR(12)
+        id: tracking_number_c
+        properties:
+          documentMetadata: false
+      - name: TYPE
+        ordinal: 33
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 31
+          originalTypeFull: NVARCHAR(31)
+        id: type
+        properties:
+          documentMetadata: false
+    entityId: fact_salesforce_opportunity-aaql
+  factDatasetSettings:
+    type: TRANSACTIONAL
+    rootDataEntityId:
+      datasetId: opportunity-3ap7
+      name: OPPORTUNITY
+      taskId: salesforce_transform-aaqj
+    factDimension:
+      - name: DIM_SALESFORCE_ACCOUNT
+        dimension:
+          type: NONE
+          datasetId: dim_salesforce_account-wyav
+          taskId: data_mart-5anr
+        dimensionRelationshipPath: opportunity_account_relation-wyau
+        dimensionRelationshipPathDisplayName: OPPORTUNITY_ACCOUNT_relation
+        dimensionRelationshipPathShortName: ''
+      - name: DIM_SALESFORCE_USER
+        dimension:
+          type: NONE
+          datasetId: dim_salesforce_user-iiln
+          taskId: data_mart-5anr
+        dimensionRelationshipPath: opportunity_user-_h74
+        dimensionRelationshipPathDisplayName: OPPORTUNITY_USER
+        dimensionRelationshipPathShortName: ''
+      - name: DIM_SALESFORCE_USER
+        dimension:
+          type: NONE
+          datasetId: dim_salesforce_user-iiln
+          taskId: data_mart-5anr
+        dimensionRelationshipPath: opportunity_account_relation-wyau$_$account_user-qhll
+        dimensionRelationshipPathDisplayName: OPPORTUNITY_ACCOUNT_relation:ACCOUNT_USER
+        dimensionRelationshipPathShortName: ''
+    mapping:
+      columns:
+        - columnName: ACCOUNT_ID
+          type: NONE
+          expression:
+            expressionStatement: ${ACCOUNT_ID}
+            alias:
+              - name: ACCOUNT_ID
+                value: ACCOUNT_ID
+        - columnName: AMOUNT
+          type: NONE
+          expression:
+            expressionStatement: ${AMOUNT}
+            alias:
+              - name: AMOUNT
+                value: AMOUNT
+        - columnName: CLOSE_DATE
+          type: NONE
+          expression:
+            expressionStatement: ${CLOSE_DATE}
+            alias:
+              - name: CLOSE_DATE
+                value: CLOSE_DATE
+        - columnName: CREATED_BY_ID
+          type: NONE
+          expression:
+            expressionStatement: ${CREATED_BY_ID}
+            alias:
+              - name: CREATED_BY_ID
+                value: CREATED_BY_ID
+        - columnName: CREATED_DATE
+          type: NONE
+          expression:
+            expressionStatement: ${CREATED_DATE}
+            alias:
+              - name: CREATED_DATE
+                value: CREATED_DATE
+        - columnName: CURRENT_GENERATORS_C
+          type: NONE
+          expression:
+            expressionStatement: ${CURRENT_GENERATORS_C}
+            alias:
+              - name: CURRENT_GENERATORS_C
+                value: CURRENT_GENERATORS_C
+        - columnName: DELIVERY_INSTALLATION_STATUS_C
+          type: NONE
+          expression:
+            expressionStatement: ${DELIVERY_INSTALLATION_STATUS_C}
+            alias:
+              - name: DELIVERY_INSTALLATION_STATUS_C
+                value: DELIVERY_INSTALLATION_STATUS_C
+        - columnName: EXPECTED_REVENUE
+          type: NONE
+          expression:
+            expressionStatement: ${EXPECTED_REVENUE}
+            alias:
+              - name: EXPECTED_REVENUE
+                value: EXPECTED_REVENUE
+        - columnName: FISCAL
+          type: NONE
+          expression:
+            expressionStatement: ${FISCAL}
+            alias:
+              - name: FISCAL
+                value: FISCAL
+        - columnName: FISCAL_QUARTER
+          type: NONE
+          expression:
+            expressionStatement: ${FISCAL_QUARTER}
+            alias:
+              - name: FISCAL_QUARTER
+                value: FISCAL_QUARTER
+        - columnName: FISCAL_YEAR
+          type: NONE
+          expression:
+            expressionStatement: ${FISCAL_YEAR}
+            alias:
+              - name: FISCAL_YEAR
+                value: FISCAL_YEAR
+        - columnName: FORECAST_CATEGORY
+          type: NONE
+          expression:
+            expressionStatement: ${FORECAST_CATEGORY}
+            alias:
+              - name: FORECAST_CATEGORY
+                value: FORECAST_CATEGORY
+        - columnName: FORECAST_CATEGORY_NAME
+          type: NONE
+          expression:
+            expressionStatement: ${FORECAST_CATEGORY_NAME}
+            alias:
+              - name: FORECAST_CATEGORY_NAME
+                value: FORECAST_CATEGORY_NAME
+        - columnName: HAS_OPEN_ACTIVITY
+          type: NONE
+          expression:
+            expressionStatement: ${HAS_OPEN_ACTIVITY}
+            alias:
+              - name: HAS_OPEN_ACTIVITY
+                value: HAS_OPEN_ACTIVITY
+        - columnName: HAS_OPPORTUNITY_LINE_ITEM
+          type: NONE
+          expression:
+            expressionStatement: ${HAS_OPPORTUNITY_LINE_ITEM}
+            alias:
+              - name: HAS_OPPORTUNITY_LINE_ITEM
+                value: HAS_OPPORTUNITY_LINE_ITEM
+        - columnName: HAS_OVERDUE_TASK
+          type: NONE
+          expression:
+            expressionStatement: ${HAS_OVERDUE_TASK}
+            alias:
+              - name: HAS_OVERDUE_TASK
+                value: HAS_OVERDUE_TASK
+        - columnName: OPPORTUNITY_ID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OPPORTUNITY_ID}
+            alias:
+              - name: OPPORTUNITY_ID
+                value: OPPORTUNITY_ID
+        - columnName: IS_CLOSED
+          type: NONE
+          expression:
+            expressionStatement: ${IS_CLOSED}
+            alias:
+              - name: IS_CLOSED
+                value: IS_CLOSED
+        - columnName: IS_DELETED
+          type: NONE
+          expression:
+            expressionStatement: ${IS_DELETED}
+            alias:
+              - name: IS_DELETED
+                value: IS_DELETED
+        - columnName: IS_PRIVATE
+          type: NONE
+          expression:
+            expressionStatement: ${IS_PRIVATE}
+            alias:
+              - name: IS_PRIVATE
+                value: IS_PRIVATE
+        - columnName: IS_WON
+          type: NONE
+          expression:
+            expressionStatement: ${IS_WON}
+            alias:
+              - name: IS_WON
+                value: IS_WON
+        - columnName: LAST_MODIFIED_BY_ID
+          type: NONE
+          expression:
+            expressionStatement: ${LAST_MODIFIED_BY_ID}
+            alias:
+              - name: LAST_MODIFIED_BY_ID
+                value: LAST_MODIFIED_BY_ID
+        - columnName: LAST_MODIFIED_DATE
+          type: NONE
+          expression:
+            expressionStatement: ${LAST_MODIFIED_DATE}
+            alias:
+              - name: LAST_MODIFIED_DATE
+                value: LAST_MODIFIED_DATE
+        - columnName: LEAD_SOURCE
+          type: NONE
+          expression:
+            expressionStatement: ${LEAD_SOURCE}
+            alias:
+              - name: LEAD_SOURCE
+                value: LEAD_SOURCE
+        - columnName: MAIN_COMPETITORS_C
+          type: NONE
+          expression:
+            expressionStatement: ${MAIN_COMPETITORS_C}
+            alias:
+              - name: MAIN_COMPETITORS_C
+                value: MAIN_COMPETITORS_C
+        - columnName: NAME
+          type: NONE
+          expression:
+            expressionStatement: ${NAME}
+            alias:
+              - name: NAME
+                value: NAME
+        - columnName: ORDER_NUMBER_C
+          type: NONE
+          expression:
+            expressionStatement: ${ORDER_NUMBER_C}
+            alias:
+              - name: ORDER_NUMBER_C
+                value: ORDER_NUMBER_C
+        - columnName: OWNER_ID
+          type: NONE
+          expression:
+            expressionStatement: ${OWNER_ID}
+            alias:
+              - name: OWNER_ID
+                value: OWNER_ID
+        - columnName: PROBABILITY
+          type: NONE
+          expression:
+            expressionStatement: ${PROBABILITY}
+            alias:
+              - name: PROBABILITY
+                value: PROBABILITY
+        - columnName: STAGE_NAME
+          type: NONE
+          expression:
+            expressionStatement: ${STAGE_NAME}
+            alias:
+              - name: STAGE_NAME
+                value: STAGE_NAME
+        - columnName: SYSTEM_MODSTAMP
+          type: NONE
+          expression:
+            expressionStatement: ${SYSTEM_MODSTAMP}
+            alias:
+              - name: SYSTEM_MODSTAMP
+                value: SYSTEM_MODSTAMP
+        - columnName: TRACKING_NUMBER_C
+          type: NONE
+          expression:
+            expressionStatement: ${TRACKING_NUMBER_C}
+            alias:
+              - name: TRACKING_NUMBER_C
+                value: TRACKING_NUMBER_C
+        - columnName: TYPE
+          type: NONE
+          expression:
+            expressionStatement: ${TYPE}
+            alias:
+              - name: TYPE
+                value: TYPE
+    transactionalDate:
+      columnName: CREATED_DATE
+      entityRelationshipPath: CREATED_DATE
+      entityRelationshipPathDisplayName: CREATED_DATE
+    subtype: MODEL_BASED
+    materializedSource: false

@@ -1,0 +1,11 @@
+sourceConnection: '{{task.churn_landing-wjkl.sourceConnection}}'
+explicitlySelected:
+  - name: service_data
+    schema: '{{task.churn_landing-wjkl:null$_$churn.schema}}'
+    type: TABLE
+  - name: subscriptions
+    schema: '{{task.churn_landing-wjkl:null$_$churn.schema}}'
+    type: TABLE
+  - name: usage_data
+    schema: '{{task.churn_landing-wjkl:null$_$churn.schema}}'
+    type: TABLE

@@ -1,0 +1,125 @@
+properties:
+  id: dim_service_data-eoxx
+  name: DIM_SERVICE_DATA
+  inputDatasets:
+    - datasetId: service_data-kyi7
+      name: SERVICE_DATA
+      taskId: transform-drwz
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: DIM_SERVICE_DATA
+    columns:
+      - name: ACCOUNTID
+        ordinal: 1
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 7
+          originalTypeFull: NVARCHAR(7)
+        id: accountid
+        properties:
+          documentMetadata: false
+      - name: SERVICERATING
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: servicerating
+        properties:
+          documentMetadata: false
+      - name: SERVICETICKETS
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: servicetickets
+        properties:
+          documentMetadata: false
+      - name: LASTSERVICEDATE
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: lastservicedate
+        properties:
+          documentMetadata: false
+      - name: LASTTICKET
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: lastticket
+        properties:
+          documentMetadata: false
+      - name: REVIEW
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 128
+          originalTypeFull: NVARCHAR(128)
+        id: review
+        properties:
+          documentMetadata: false
+    entityId: ''
+  dimensionDatasetSettings:
+    type: TYPE1
+    rootDataEntityId:
+      datasetId: service_data-kyi7
+      name: SERVICE_DATA
+      taskId: transform-drwz
+    mapping:
+      columns:
+        - columnName: ACCOUNTID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ACCOUNTID}
+            alias:
+              - name: ACCOUNTID
+                value: ACCOUNTID
+        - columnName: SERVICERATING
+          type: NONE
+          expression:
+            expressionStatement: ${SERVICERATING}
+            alias:
+              - name: SERVICERATING
+                value: SERVICERATING
+        - columnName: SERVICETICKETS
+          type: NONE
+          expression:
+            expressionStatement: ${SERVICETICKETS}
+            alias:
+              - name: SERVICETICKETS
+                value: SERVICETICKETS
+        - columnName: LASTSERVICEDATE
+          type: NONE
+          expression:
+            expressionStatement: ${LASTSERVICEDATE}
+            alias:
+              - name: LASTSERVICEDATE
+                value: LASTSERVICEDATE
+        - columnName: LASTTICKET
+          type: NONE
+          expression:
+            expressionStatement: ${LASTTICKET}
+            alias:
+              - name: LASTTICKET
+                value: LASTTICKET
+        - columnName: REVIEW
+          type: NONE
+          expression:
+            expressionStatement: ${REVIEW}
+            alias:
+              - name: REVIEW
+                value: REVIEW
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false

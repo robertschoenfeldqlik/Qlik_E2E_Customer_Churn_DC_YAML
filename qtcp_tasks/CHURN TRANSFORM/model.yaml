@@ -1,0 +1,81 @@
+relationships:
+  - sourceEntity:
+      datasetId: sentiment_analysis-uyoq
+      name: SENTIMENT_ANALYSIS
+      taskId: transform-drwz
+    targetEntity:
+      datasetId: service_ratings-drw3
+      name: SERVICE_RATINGS
+      taskId: transform-drwz
+    columnRelationships:
+      - sourceColumn: ACCOUNTID
+        targetColumn: RATING_CATEGORY
+        sourceColumnId: accountid
+        targetColumnId: rating_category
+    name: SENTIMENTANALYSIS_SERVICERATINGS
+    description: ''
+    id: sentimentanalysis_serviceratings-texn
+  - sourceEntity:
+      datasetId: subscriptions-drw1
+      name: SUBSCRIPTIONS
+      taskId: transform-drwz
+    targetEntity:
+      datasetId: demographics-5anq
+      name: DEMOGRAPHICS
+      taskId: transform-drwz
+    columnRelationships:
+      - sourceColumn: ACCOUNTID
+        targetColumn: ACCOUNTID
+        sourceColumnId: accountid
+        targetColumnId: accountid
+    name: SUBSCRIPTIONS_DEMOGRAPHICS_relation
+    description: ''
+    id: subscriptions_demographics_relation-drxg
+  - sourceEntity:
+      datasetId: subscriptions-drw1
+      name: SUBSCRIPTIONS
+      taskId: transform-drwz
+    targetEntity:
+      datasetId: sentiment_analysis-uyoq
+      name: SENTIMENT_ANALYSIS
+      taskId: transform-drwz
+    columnRelationships:
+      - sourceColumn: ACCOUNTID
+        targetColumn: ACCOUNTID
+        sourceColumnId: accountid
+        targetColumnId: accountid
+    name: SUBSCRIPTIONS_SENTIMENTANALYSIS
+    description: ''
+    id: subscriptions_sentimentanalysis-gymz
+  - sourceEntity:
+      datasetId: subscriptions-drw1
+      name: SUBSCRIPTIONS
+      taskId: transform-drwz
+    targetEntity:
+      datasetId: service_data-kyi7
+      name: SERVICE_DATA
+      taskId: transform-drwz
+    columnRelationships:
+      - sourceColumn: ACCOUNTID
+        targetColumn: ACCOUNTID
+        sourceColumnId: accountid
+        targetColumnId: accountid
+    name: SUBSCRIPTIONS_SERVICEDATA
+    description: ''
+    id: subscriptions_servicedata-d-kc
+  - sourceEntity:
+      datasetId: subscriptions-drw1
+      name: SUBSCRIPTIONS
+      taskId: transform-drwz
+    targetEntity:
+      datasetId: usage_data-bx4e
+      name: USAGE_DATA
+      taskId: transform-drwz
+    columnRelationships:
+      - sourceColumn: ACCOUNTID
+        targetColumn: ACCOUNTID
+        sourceColumnId: accountid
+        targetColumnId: accountid
+    name: SUBSCRIPTIONS_USAGE_DATA_relation
+    description: ''
+    id: subscriptions_usage_data_relation-5ano

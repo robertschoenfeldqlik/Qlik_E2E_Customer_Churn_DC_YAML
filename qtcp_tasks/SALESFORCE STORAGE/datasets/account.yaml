@@ -1,0 +1,13 @@
+properties:
+  id: account-_h7w
+  name: account
+  inputDatasets:
+    - datasetId: account
+      taskId: salesforce_landing-_h7t
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: id
+      newColumnName: ACCOUNT_ID
+      primaryKeyOrdinal: 1
+      nullable: false

@@ -1,0 +1,6 @@
+properties:
+  id: demographics-bx36
+  name: DEMOGRAPHICS
+  inputDatasets:
+    - datasetId: demographics
+      taskId: demographics_registered-bx33

@@ -1,0 +1,69 @@
+properties:
+  id: dim_usage_data-5ant
+  name: DIM_USAGE_DATA
+  inputDatasets:
+    - datasetId: usage_data-bx4e
+      name: USAGE_DATA
+      taskId: transform-drwz
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: DIM_USAGE_DATA
+    columns:
+      - name: ACCOUNTID
+        ordinal: 1
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 7
+          originalTypeFull: NVARCHAR(7)
+        id: accountid
+      - name: CURRENTPERIODUSAGE
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: currentperiodusage
+      - name: PRIORPERIODUSAGE
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: priorperiodusage
+    entityId: ''
+  dimensionDatasetSettings:
+    type: TYPE1
+    rootDataEntityId:
+      datasetId: usage_data-bx4e
+      name: USAGE_DATA
+      taskId: transform-drwz
+    mapping:
+      columns:
+        - columnName: ACCOUNTID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ACCOUNTID}
+            alias:
+              - name: ACCOUNTID
+                value: ACCOUNTID
+        - columnName: CURRENTPERIODUSAGE
+          type: NONE
+          expression:
+            expressionStatement: ${CURRENTPERIODUSAGE}
+            alias:
+              - name: CURRENTPERIODUSAGE
+                value: CURRENTPERIODUSAGE
+        - columnName: PRIORPERIODUSAGE
+          type: NONE
+          expression:
+            expressionStatement: ${PRIORPERIODUSAGE}
+            alias:
+              - name: PRIORPERIODUSAGE
+                value: PRIORPERIODUSAGE
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false

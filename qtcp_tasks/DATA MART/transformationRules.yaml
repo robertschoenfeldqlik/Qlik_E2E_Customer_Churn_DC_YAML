@@ -1,0 +1,14 @@
+rules:
+  - ordinal: 0
+    actionType: CHANGE_COLUMN_DATA_TYPE
+    scopeType: COLUMN
+    scope:
+      whereTableName: DIM_SALESFORCE_USER
+      whereDatatype: WSTRING
+    action:
+      renameType: RENAME
+      column:
+        datatype:
+          type: WSTRING
+          length: 500
+    name: Rule

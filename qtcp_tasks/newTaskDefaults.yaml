@@ -1,0 +1,4 @@
+knowledgeMart:
+  llmSettings: {}
+fileBasedKnowledgeMart:
+  llmSettings: {}

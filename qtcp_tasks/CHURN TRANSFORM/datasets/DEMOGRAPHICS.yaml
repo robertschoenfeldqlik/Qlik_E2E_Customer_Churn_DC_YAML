@@ -1,0 +1,95 @@
+properties:
+  id: demographics-5anq
+  name: DEMOGRAPHICS
+  inputDatasets:
+    - datasetId: demographics-bx36
+      name: DEMOGRAPHICS
+      taskId: demographics_storage-bx34
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: DEMOGRAPHICS
+    columns:
+      - name: ACCOUNTID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: STRING
+          length: 7
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(7)
+        id: accountid
+      - name: TERRITORY
+        ordinal: 2
+        datatype:
+          type: STRING
+          length: 2
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(2)
+        id: territory
+      - name: COUNTRY
+        ordinal: 3
+        datatype:
+          type: STRING
+          length: 3
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(3)
+        id: country
+      - name: PHONEMODEL
+        ordinal: 4
+        datatype:
+          type: STRING
+          length: 6
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(6)
+        id: phonemodel
+      - name: CUSTOMERNAME
+        ordinal: 5
+        datatype:
+          type: STRING
+          length: 20
+          originalTypeFull: VARCHAR(20)
+        id: CUSTOMERNAME-a44d
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: demographics-bx36
+        name: DEMOGRAPHICS
+        taskId: demographics_storage-bx34
+      mappingFields:
+        - columnId: accountid
+          expression:
+            expressionStatement: ${ACCOUNTID}
+            alias:
+              - name: ACCOUNTID
+                value: ACCOUNTID
+        - columnId: territory
+          expression:
+            expressionStatement: ${TERRITORY}
+            alias:
+              - name: TERRITORY
+                value: TERRITORY
+        - columnId: country
+          expression:
+            expressionStatement: ${COUNTRY}
+            alias:
+              - name: COUNTRY
+                value: COUNTRY
+        - columnId: phonemodel
+          expression:
+            expressionStatement: ${PHONEMODEL}
+            alias:
+              - name: PHONEMODEL
+                value: PHONEMODEL
+        - columnId: CUSTOMERNAME-a44d
+          expression:
+            expressionStatement: ${CUSTOMERNAME}
+            alias:
+              - name: CUSTOMERNAME
+                value: CUSTOMERNAME
+      id: demographics_default_mapping-5anr
+      name: DEMOGRAPHICS_default_mapping
+      description: ''

@@ -1,0 +1,801 @@
+properties:
+  id: contact-_h70
+  name: CONTACT
+  inputDatasets:
+    - datasetId: contact-_h7x
+      name: CONTACT
+      taskId: salesforce_storage-_h7u
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: CONTACT
+    columns:
+      - name: ACCOUNT_ID
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: account_id
+        properties:
+          documentMetadata: false
+      - name: ASSISTANT_NAME
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 13
+          originalTypeFull: NVARCHAR(13)
+        id: assistant_name
+        properties:
+          documentMetadata: false
+      - name: ASSISTANT_PHONE
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 14
+          originalTypeFull: NVARCHAR(14)
+        id: assistant_phone
+        properties:
+          documentMetadata: false
+      - name: BIRTHDATE
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: DATE
+          originalTypeFull: DATE
+        id: birthdate
+        properties:
+          documentMetadata: false
+      - name: CLEAN_STATUS
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 7
+          originalTypeFull: NVARCHAR(7)
+        id: clean_status
+        properties:
+          documentMetadata: false
+      - name: CREATED_BY_ID
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: created_by_id
+        properties:
+          documentMetadata: false
+      - name: CREATED_DATE
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: created_date
+        properties:
+          documentMetadata: false
+      - name: DEPARTMENT
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 19
+          originalTypeFull: NVARCHAR(19)
+        id: department
+        properties:
+          documentMetadata: false
+      - name: EMAIL
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        id: email
+        properties:
+          documentMetadata: false
+      - name: FAX
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: fax
+        properties:
+          documentMetadata: false
+      - name: FIRST_NAME
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 9
+          originalTypeFull: NVARCHAR(9)
+        id: first_name
+        properties:
+          documentMetadata: false
+      - name: CONTACT_ID
+        ordinal: 12
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: id
+        properties:
+          documentMetadata: false
+      - name: IS_DELETED
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: is_deleted
+        properties:
+          documentMetadata: false
+      - name: IS_EMAIL_BOUNCED
+        ordinal: 14
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: is_email_bounced
+        properties:
+          documentMetadata: false
+      - name: LANGUAGES_C
+        ordinal: 15
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: languages_c
+        properties:
+          documentMetadata: false
+      - name: LAST_MODIFIED_BY_ID
+        ordinal: 16
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: last_modified_by_id
+        properties:
+          documentMetadata: false
+      - name: LAST_MODIFIED_DATE
+        ordinal: 17
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: last_modified_date
+        properties:
+          documentMetadata: false
+      - name: LAST_NAME
+        ordinal: 18
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 9
+          originalTypeFull: NVARCHAR(9)
+        id: last_name
+        properties:
+          documentMetadata: false
+      - name: LEAD_SOURCE
+        ordinal: 19
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 17
+          originalTypeFull: NVARCHAR(17)
+        id: lead_source
+        properties:
+          documentMetadata: false
+      - name: LEVEL_C
+        ordinal: 20
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 9
+          originalTypeFull: NVARCHAR(9)
+        id: level_c
+        properties:
+          documentMetadata: false
+      - name: MAILING_ADDRESS_CITY
+        ordinal: 21
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 13
+          originalTypeFull: NVARCHAR(13)
+        id: mailing_address_city
+        properties:
+          documentMetadata: false
+      - name: MAILING_ADDRESS_COUNTRY
+        ordinal: 22
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: mailing_address_country
+        properties:
+          documentMetadata: false
+      - name: MAILING_ADDRESS_POSTAL_CODE
+        ordinal: 23
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: mailing_address_postal_code
+        properties:
+          documentMetadata: false
+      - name: MAILING_ADDRESS_STATE
+        ordinal: 24
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 2
+          originalTypeFull: NVARCHAR(2)
+        id: mailing_address_state
+        properties:
+          documentMetadata: false
+      - name: MAILING_ADDRESS_STREET
+        ordinal: 25
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 101
+          originalTypeFull: NVARCHAR(101)
+        id: mailing_address_street
+        properties:
+          documentMetadata: false
+      - name: MAILING_CITY
+        ordinal: 26
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 13
+          originalTypeFull: NVARCHAR(13)
+        id: mailing_city
+        properties:
+          documentMetadata: false
+      - name: MAILING_COUNTRY
+        ordinal: 27
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: mailing_country
+        properties:
+          documentMetadata: false
+      - name: MAILING_POSTAL_CODE
+        ordinal: 28
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: mailing_postal_code
+        properties:
+          documentMetadata: false
+      - name: MAILING_STATE
+        ordinal: 29
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 2
+          originalTypeFull: NVARCHAR(2)
+        id: mailing_state
+        properties:
+          documentMetadata: false
+      - name: MAILING_STREET
+        ordinal: 30
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 101
+          originalTypeFull: NVARCHAR(101)
+        id: mailing_street
+        properties:
+          documentMetadata: false
+      - name: MOBILE_PHONE
+        ordinal: 31
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: mobile_phone
+        properties:
+          documentMetadata: false
+      - name: NAME
+        ordinal: 32
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 17
+          originalTypeFull: NVARCHAR(17)
+        id: name
+        properties:
+          documentMetadata: false
+      - name: OTHER_ADDRESS_CITY
+        ordinal: 33
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: other_address_city
+        properties:
+          documentMetadata: false
+      - name: OTHER_ADDRESS_COUNTRY
+        ordinal: 34
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: other_address_country
+        properties:
+          documentMetadata: false
+      - name: OTHER_ADDRESS_POSTAL_CODE
+        ordinal: 35
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: other_address_postal_code
+        properties:
+          documentMetadata: false
+      - name: OTHER_ADDRESS_STATE
+        ordinal: 36
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 2
+          originalTypeFull: NVARCHAR(2)
+        id: other_address_state
+        properties:
+          documentMetadata: false
+      - name: OTHER_ADDRESS_STREET
+        ordinal: 37
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: other_address_street
+        properties:
+          documentMetadata: false
+      - name: OTHER_CITY
+        ordinal: 38
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: other_city
+        properties:
+          documentMetadata: false
+      - name: OTHER_COUNTRY
+        ordinal: 39
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 6
+          originalTypeFull: NVARCHAR(6)
+        id: other_country
+        properties:
+          documentMetadata: false
+      - name: OTHER_PHONE
+        ordinal: 40
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 14
+          originalTypeFull: NVARCHAR(14)
+        id: other_phone
+        properties:
+          documentMetadata: false
+      - name: OTHER_POSTAL_CODE
+        ordinal: 41
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: other_postal_code
+        properties:
+          documentMetadata: false
+      - name: OTHER_STATE
+        ordinal: 42
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 2
+          originalTypeFull: NVARCHAR(2)
+        id: other_state
+        properties:
+          documentMetadata: false
+      - name: OTHER_STREET
+        ordinal: 43
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: other_street
+        properties:
+          documentMetadata: false
+      - name: OWNER_ID
+        ordinal: 44
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: owner_id
+        properties:
+          documentMetadata: false
+      - name: PHONE
+        ordinal: 45
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: phone
+        properties:
+          documentMetadata: false
+      - name: PHOTO_URL
+        ordinal: 46
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 41
+          originalTypeFull: NVARCHAR(41)
+        id: photo_url
+        properties:
+          documentMetadata: false
+      - name: SALUTATION
+        ordinal: 47
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 3
+          originalTypeFull: NVARCHAR(3)
+        id: salutation
+        properties:
+          documentMetadata: false
+      - name: SYSTEM_MODSTAMP
+        ordinal: 48
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: system_modstamp
+        properties:
+          documentMetadata: false
+      - name: TITLE
+        ordinal: 49
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 31
+          originalTypeFull: NVARCHAR(31)
+        id: title
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: contact-_h7x
+        name: contact
+        taskId: salesforce_storage-_h7u
+      mappingFields:
+        - columnId: account_id
+          expression:
+            expressionStatement: ${ACCOUNT_ID}
+            alias:
+              - name: ACCOUNT_ID
+                value: ACCOUNT_ID
+        - columnId: assistant_name
+          expression:
+            expressionStatement: ${ASSISTANT_NAME}
+            alias:
+              - name: ASSISTANT_NAME
+                value: ASSISTANT_NAME
+        - columnId: assistant_phone
+          expression:
+            expressionStatement: ${ASSISTANT_PHONE}
+            alias:
+              - name: ASSISTANT_PHONE
+                value: ASSISTANT_PHONE
+        - columnId: birthdate
+          expression:
+            expressionStatement: ${BIRTHDATE}
+            alias:
+              - name: BIRTHDATE
+                value: BIRTHDATE
+        - columnId: clean_status
+          expression:
+            expressionStatement: ${CLEAN_STATUS}
+            alias:
+              - name: CLEAN_STATUS
+                value: CLEAN_STATUS
+        - columnId: created_by_id
+          expression:
+            expressionStatement: ${CREATED_BY_ID}
+            alias:
+              - name: CREATED_BY_ID
+                value: CREATED_BY_ID
+        - columnId: created_date
+          expression:
+            expressionStatement: ${CREATED_DATE}
+            alias:
+              - name: CREATED_DATE
+                value: CREATED_DATE
+        - columnId: department
+          expression:
+            expressionStatement: ${DEPARTMENT}
+            alias:
+              - name: DEPARTMENT
+                value: DEPARTMENT
+        - columnId: email
+          expression:
+            expressionStatement: ${EMAIL}
+            alias:
+              - name: EMAIL
+                value: EMAIL
+        - columnId: fax
+          expression:
+            expressionStatement: ${FAX}
+            alias:
+              - name: FAX
+                value: FAX
+        - columnId: first_name
+          expression:
+            expressionStatement: ${FIRST_NAME}
+            alias:
+              - name: FIRST_NAME
+                value: FIRST_NAME
+        - columnId: id
+          expression:
+            expressionStatement: ${CONTACT_ID}
+            alias:
+              - name: CONTACT_ID
+                value: CONTACT_ID
+        - columnId: is_deleted
+          expression:
+            expressionStatement: ${IS_DELETED}
+            alias:
+              - name: IS_DELETED
+                value: IS_DELETED
+        - columnId: is_email_bounced
+          expression:
+            expressionStatement: ${IS_EMAIL_BOUNCED}
+            alias:
+              - name: IS_EMAIL_BOUNCED
+                value: IS_EMAIL_BOUNCED
+        - columnId: languages_c
+          expression:
+            expressionStatement: ${LANGUAGES_C}
+            alias:
+              - name: LANGUAGES_C
+                value: LANGUAGES_C
+        - columnId: last_modified_by_id
+          expression:
+            expressionStatement: ${LAST_MODIFIED_BY_ID}
+            alias:
+              - name: LAST_MODIFIED_BY_ID
+                value: LAST_MODIFIED_BY_ID
+        - columnId: last_modified_date
+          expression:
+            expressionStatement: ${LAST_MODIFIED_DATE}
+            alias:
+              - name: LAST_MODIFIED_DATE
+                value: LAST_MODIFIED_DATE
+        - columnId: last_name
+          expression:
+            expressionStatement: ${LAST_NAME}
+            alias:
+              - name: LAST_NAME
+                value: LAST_NAME
+        - columnId: lead_source
+          expression:
+            expressionStatement: ${LEAD_SOURCE}
+            alias:
+              - name: LEAD_SOURCE
+                value: LEAD_SOURCE
+        - columnId: level_c
+          expression:
+            expressionStatement: ${LEVEL_C}
+            alias:
+              - name: LEVEL_C
+                value: LEVEL_C
+        - columnId: mailing_address_city
+          expression:
+            expressionStatement: ${MAILING_ADDRESS_CITY}
+            alias:
+              - name: MAILING_ADDRESS_CITY
+                value: MAILING_ADDRESS_CITY
+        - columnId: mailing_address_country
+          expression:
+            expressionStatement: ${MAILING_ADDRESS_COUNTRY}
+            alias:
+              - name: MAILING_ADDRESS_COUNTRY
+                value: MAILING_ADDRESS_COUNTRY
+        - columnId: mailing_address_postal_code
+          expression:
+            expressionStatement: ${MAILING_ADDRESS_POSTAL_CODE}
+            alias:
+              - name: MAILING_ADDRESS_POSTAL_CODE
+                value: MAILING_ADDRESS_POSTAL_CODE
+        - columnId: mailing_address_state
+          expression:
+            expressionStatement: ${MAILING_ADDRESS_STATE}
+            alias:
+              - name: MAILING_ADDRESS_STATE
+                value: MAILING_ADDRESS_STATE
+        - columnId: mailing_address_street
+          expression:
+            expressionStatement: ${MAILING_ADDRESS_STREET}
+            alias:
+              - name: MAILING_ADDRESS_STREET
+                value: MAILING_ADDRESS_STREET
+        - columnId: mailing_city
+          expression:
+            expressionStatement: ${MAILING_CITY}
+            alias:
+              - name: MAILING_CITY
+                value: MAILING_CITY
+        - columnId: mailing_country
+          expression:
+            expressionStatement: ${MAILING_COUNTRY}
+            alias:
+              - name: MAILING_COUNTRY
+                value: MAILING_COUNTRY
+        - columnId: mailing_postal_code
+          expression:
+            expressionStatement: ${MAILING_POSTAL_CODE}
+            alias:
+              - name: MAILING_POSTAL_CODE
+                value: MAILING_POSTAL_CODE
+        - columnId: mailing_state
+          expression:
+            expressionStatement: ${MAILING_STATE}
+            alias:
+              - name: MAILING_STATE
+                value: MAILING_STATE
+        - columnId: mailing_street
+          expression:
+            expressionStatement: ${MAILING_STREET}
+            alias:
+              - name: MAILING_STREET
+                value: MAILING_STREET
+        - columnId: mobile_phone
+          expression:
+            expressionStatement: ${MOBILE_PHONE}
+            alias:
+              - name: MOBILE_PHONE
+                value: MOBILE_PHONE
+        - columnId: name
+          expression:
+            expressionStatement: ${NAME}
+            alias:
+              - name: NAME
+                value: NAME
+        - columnId: other_address_city
+          expression:
+            expressionStatement: ${OTHER_ADDRESS_CITY}
+            alias:
+              - name: OTHER_ADDRESS_CITY
+                value: OTHER_ADDRESS_CITY
+        - columnId: other_address_country
+          expression:
+            expressionStatement: ${OTHER_ADDRESS_COUNTRY}
+            alias:
+              - name: OTHER_ADDRESS_COUNTRY
+                value: OTHER_ADDRESS_COUNTRY
+        - columnId: other_address_postal_code
+          expression:
+            expressionStatement: ${OTHER_ADDRESS_POSTAL_CODE}
+            alias:
+              - name: OTHER_ADDRESS_POSTAL_CODE
+                value: OTHER_ADDRESS_POSTAL_CODE
+        - columnId: other_address_state
+          expression:
+            expressionStatement: ${OTHER_ADDRESS_STATE}
+            alias:
+              - name: OTHER_ADDRESS_STATE
+                value: OTHER_ADDRESS_STATE
+        - columnId: other_address_street
+          expression:
+            expressionStatement: ${OTHER_ADDRESS_STREET}
+            alias:
+              - name: OTHER_ADDRESS_STREET
+                value: OTHER_ADDRESS_STREET
+        - columnId: other_city
+          expression:
+            expressionStatement: ${OTHER_CITY}
+            alias:
+              - name: OTHER_CITY
+                value: OTHER_CITY
+        - columnId: other_country
+          expression:
+            expressionStatement: ${OTHER_COUNTRY}
+            alias:
+              - name: OTHER_COUNTRY
+                value: OTHER_COUNTRY
+        - columnId: other_phone
+          expression:
+            expressionStatement: ${OTHER_PHONE}
+            alias:
+              - name: OTHER_PHONE
+                value: OTHER_PHONE
+        - columnId: other_postal_code
+          expression:
+            expressionStatement: ${OTHER_POSTAL_CODE}
+            alias:
+              - name: OTHER_POSTAL_CODE
+                value: OTHER_POSTAL_CODE
+        - columnId: other_state
+          expression:
+            expressionStatement: ${OTHER_STATE}
+            alias:
+              - name: OTHER_STATE
+                value: OTHER_STATE
+        - columnId: other_street
+          expression:
+            expressionStatement: ${OTHER_STREET}
+            alias:
+              - name: OTHER_STREET
+                value: OTHER_STREET
+        - columnId: owner_id
+          expression:
+            expressionStatement: ${OWNER_ID}
+            alias:
+              - name: OWNER_ID
+                value: OWNER_ID
+        - columnId: phone
+          expression:
+            expressionStatement: ${PHONE}
+            alias:
+              - name: PHONE
+                value: PHONE
+        - columnId: photo_url
+          expression:
+            expressionStatement: ${PHOTO_URL}
+            alias:
+              - name: PHOTO_URL
+                value: PHOTO_URL
+        - columnId: salutation
+          expression:
+            expressionStatement: ${SALUTATION}
+            alias:
+              - name: SALUTATION
+                value: SALUTATION
+        - columnId: system_modstamp
+          expression:
+            expressionStatement: ${SYSTEM_MODSTAMP}
+            alias:
+              - name: SYSTEM_MODSTAMP
+                value: SYSTEM_MODSTAMP
+        - columnId: title
+          expression:
+            expressionStatement: ${TITLE}
+            alias:
+              - name: TITLE
+                value: TITLE
+      id: contact_default_mapping-_h71
+      name: CONTACT_default_mapping
+      description: ''

@@ -1,0 +1,14 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_TABLE
+    action:
+      renameType: TO_UPPER
+      value: ''
+    name: Capitalize Datasets
+  - ordinal: 1
+    actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    action:
+      renameType: TO_UPPER
+      value: ''
+    name: Capitalize Columns

@@ -1,0 +1,13 @@
+properties:
+  id: opportunity-_h7y
+  name: opportunity
+  inputDatasets:
+    - datasetId: opportunity
+      taskId: salesforce_landing-_h7t
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: id
+      newColumnName: OPPORTUNITY_ID
+      primaryKeyOrdinal: 1
+      nullable: false

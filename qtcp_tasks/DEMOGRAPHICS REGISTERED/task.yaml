@@ -1,0 +1,9 @@
+properties:
+  name: DEMOGRAPHICS REGISTERED
+  id: demographics_registered-bx33
+  type: REGISTERED_DATA
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.demographics_registered-bx33.internalSchema}}'
+    taskSchema: '{{task.demographics_registered-bx33.taskSchema}}'
+    databaseName: '{{task.demographics_registered-bx33.databaseName}}'

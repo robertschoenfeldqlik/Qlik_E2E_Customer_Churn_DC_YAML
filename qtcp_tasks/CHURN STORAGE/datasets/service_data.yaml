@@ -1,0 +1,6 @@
+properties:
+  id: service_data-kyi1
+  name: service_data
+  inputDatasets:
+    - datasetId: service_data
+      taskId: churn_landing-wjkl

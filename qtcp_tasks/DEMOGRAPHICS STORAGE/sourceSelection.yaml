@@ -1,0 +1,4 @@
+explicitlySelected:
+  - sourceTask: demographics_registered-bx33
+    name: DEMOGRAPHICS
+    sourceTableId: demographics

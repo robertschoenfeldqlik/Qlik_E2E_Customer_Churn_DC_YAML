@@ -1,0 +1,15 @@
+properties:
+  id: sentiment_analysis-uyoq
+  name: SENTIMENT_ANALYSIS
+  inputDatasets:
+    - datasetId: service_data-kyi1
+      taskId: storage-0ivk
+    - datasetId: subscriptions-kyi2
+      taskId: storage-0ivk
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, SENTIMENT_ANALYSIS)}}'
+    targetId: ab1686bf-e9f2-414f-b679-e4116b7536e3
+    dataflowTargetState: VALID
+    incremental: false
+mappings:
+  mappings: []

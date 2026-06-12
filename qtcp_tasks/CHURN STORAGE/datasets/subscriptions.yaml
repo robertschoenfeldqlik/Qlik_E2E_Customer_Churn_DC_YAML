@@ -1,0 +1,20 @@
+properties:
+  id: subscriptions-kyi2
+  name: subscriptions
+  inputDatasets:
+    - datasetId: subscriptions
+      taskId: churn_landing-wjkl
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: Test
+      newDataType:
+        type: BOOLEAN
+        length: 0
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ''
+        alias: []
+      addedColumnId: '8ccf7e24-1a75-4c5c-b7ea-ac281819e9b3'

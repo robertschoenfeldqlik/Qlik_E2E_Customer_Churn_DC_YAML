@@ -1,0 +1,5 @@
+explicitlySelected:
+  - database: '{{task.demographics_registered-bx33:GREMS_CHURN_DB$_$LANDING.database}}'
+    name: DEMOGRAPHICS
+    schema: '{{task.demographics_registered-bx33:GREMS_CHURN_DB$_$LANDING.schema}}'
+    type: TABLE

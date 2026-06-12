@@ -1,0 +1,63 @@
+properties:
+  id: usage_data-bx4e
+  name: USAGE_DATA
+  inputDatasets:
+    - datasetId: usage_data-kyi3
+      name: USAGE_DATA
+      taskId: storage-0ivk
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: USAGE_DATA
+    columns:
+      - name: ACCOUNTID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 7
+          originalTypeFull: NVARCHAR(7)
+        id: accountid
+      - name: CURRENTPERIODUSAGE
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: currentperiodusage
+      - name: PRIORPERIODUSAGE
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: priorperiodusage
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: usage_data-kyi3
+        name: usage_data
+        taskId: storage-0ivk
+      mappingFields:
+        - columnId: accountid
+          expression:
+            expressionStatement: ${ACCOUNTID}
+            alias:
+              - name: ACCOUNTID
+                value: ACCOUNTID
+        - columnId: currentperiodusage
+          expression:
+            expressionStatement: ${CURRENTPERIODUSAGE}
+            alias:
+              - name: CURRENTPERIODUSAGE
+                value: CURRENTPERIODUSAGE
+        - columnId: priorperiodusage
+          expression:
+            expressionStatement: ${PRIORPERIODUSAGE}
+            alias:
+              - name: PRIORPERIODUSAGE
+                value: PRIORPERIODUSAGE
+      id: usage_data_default_mapping-bx4f
+      name: USAGE_DATA_default_mapping
+      description: ''

@@ -1,0 +1,15 @@
+properties:
+  id: test2-1ivl
+  name: test2
+  inputDatasets:
+    - datasetId: account-_h7w
+      taskId: salesforce_storage-_h7u
+    - datasetId: opportunity-_h7y
+      taskId: salesforce_storage-_h7u
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, test2)}}'
+    targetId: d79f06af-cb5d-404e-8705-8e939210fdd2
+    dataflowTargetState: NOT_VALID
+    incremental: false
+mappings:
+  mappings: []

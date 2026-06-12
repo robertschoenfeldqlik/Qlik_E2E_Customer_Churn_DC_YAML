@@ -1,0 +1,17 @@
+properties:
+  name: SALESFORCE LANDING
+  id: salesforce_landing-_h7t
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.salesforce_landing-_h7t.taskSchema}}'
+      database: '{{task.salesforce_landing-_h7t.databaseName}}'
+  ddlHandlingPolicy:
+    addColumn: IGNORE
+    createTable: IGNORE

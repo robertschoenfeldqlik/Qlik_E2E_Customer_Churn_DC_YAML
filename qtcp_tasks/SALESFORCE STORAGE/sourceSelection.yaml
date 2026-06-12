@@ -1,0 +1,3 @@
+includePatterns:
+  - sourceTask: salesforce_landing-_h7t
+    tablePattern: '%'

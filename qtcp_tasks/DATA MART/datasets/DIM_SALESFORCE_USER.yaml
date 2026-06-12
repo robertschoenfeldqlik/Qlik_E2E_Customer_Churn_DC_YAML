@@ -1,0 +1,2253 @@
+properties:
+  id: dim_salesforce_user-iiln
+  name: DIM_SALESFORCE_USER
+  inputDatasets:
+    - datasetId: user-wyas
+      name: USER
+      taskId: salesforce_transform-aaqj
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: DIM_SALESFORCE_USER
+    columns:
+      - name: ABOUT_ME
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 326
+          originalTypeFull: NVARCHAR(326)
+        id: about_me
+        properties:
+          documentMetadata: false
+      - name: ADDRESS_COUNTRY
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 2
+          originalTypeFull: NVARCHAR(2)
+        id: address_country
+        properties:
+          documentMetadata: false
+      - name: ALIAS
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: alias
+        properties:
+          documentMetadata: false
+      - name: BADGE_TEXT
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 25
+        id: badge_text
+        properties:
+          documentMetadata: false
+      - name: BANNER_PHOTO_URL
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 219
+        id: banner_photo_url
+        properties:
+          documentMetadata: false
+      - name: COMMUNITY_NICKNAME
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 100
+        id: community_nickname
+        properties:
+          documentMetadata: false
+      - name: COMPANY_NAME
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 16
+          originalTypeFull: NVARCHAR(16)
+        id: company_name
+        properties:
+          documentMetadata: false
+      - name: COUNTRY
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 2
+          originalTypeFull: NVARCHAR(2)
+        id: country
+        properties:
+          documentMetadata: false
+      - name: CREATED_BY_ID
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: created_by_id
+        properties:
+          documentMetadata: false
+      - name: CREATED_DATE
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: created_date
+        properties:
+          documentMetadata: false
+      - name: DEFAULT_GROUP_NOTIFICATION_FREQUENCY
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 1
+          originalTypeFull: NVARCHAR(1)
+        id: default_group_notification_frequency
+        properties:
+          documentMetadata: false
+      - name: DIGEST_FREQUENCY
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 1
+          originalTypeFull: NVARCHAR(1)
+        id: digest_frequency
+        properties:
+          documentMetadata: false
+      - name: EMAIL
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 150
+        id: email
+        properties:
+          documentMetadata: false
+      - name: EMAIL_ENCODING_KEY
+        ordinal: 14
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: email_encoding_key
+        properties:
+          documentMetadata: false
+      - name: EMAIL_PREFERENCES_AUTO_BCC
+        ordinal: 15
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: email_preferences_auto_bcc
+        properties:
+          documentMetadata: false
+      - name: EMAIL_PREFERENCES_AUTO_BCC_STAY_IN_TOUCH
+        ordinal: 16
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: email_preferences_auto_bcc_stay_in_touch
+        properties:
+          documentMetadata: false
+      - name: EMAIL_PREFERENCES_STAY_IN_TOUCH_REMINDER
+        ordinal: 17
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: email_preferences_stay_in_touch_reminder
+        properties:
+          documentMetadata: false
+      - name: FIRST_NAME
+        ordinal: 18
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 100
+        id: first_name
+        properties:
+          documentMetadata: false
+      - name: FORECAST_ENABLED
+        ordinal: 19
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: forecast_enabled
+        properties:
+          documentMetadata: false
+      - name: FULL_PHOTO_URL
+        ordinal: 20
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 280
+        id: full_photo_url
+        properties:
+          documentMetadata: false
+      - name: USER_ID
+        ordinal: 21
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: id
+        properties:
+          documentMetadata: false
+      - name: IS_ACTIVE
+        ordinal: 22
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: is_active
+        properties:
+          documentMetadata: false
+      - name: IS_EXT_INDICATOR_VISIBLE
+        ordinal: 23
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: is_ext_indicator_visible
+        properties:
+          documentMetadata: false
+      - name: IS_PROFILE_PHOTO_ACTIVE
+        ordinal: 24
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: is_profile_photo_active
+        properties:
+          documentMetadata: false
+      - name: JIGSAW_IMPORT_LIMIT_OVERRIDE
+        ordinal: 25
+        nullable: true
+        datatype:
+          type: INT8
+          originalTypeFull: BIGINT
+        id: jigsaw_import_limit_override
+        properties:
+          documentMetadata: false
+      - name: LANGUAGE_LOCALE_KEY
+        ordinal: 26
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: language_locale_key
+        properties:
+          documentMetadata: false
+      - name: LAST_LOGIN_DATE
+        ordinal: 27
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: last_login_date
+        properties:
+          documentMetadata: false
+      - name: LAST_MODIFIED_BY_ID
+        ordinal: 28
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: last_modified_by_id
+        properties:
+          documentMetadata: false
+      - name: LAST_MODIFIED_DATE
+        ordinal: 29
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: last_modified_date
+        properties:
+          documentMetadata: false
+      - name: LAST_NAME
+        ordinal: 30
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 100
+        id: last_name
+        properties:
+          documentMetadata: false
+      - name: LAST_PASSWORD_CHANGE_DATE
+        ordinal: 31
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: last_password_change_date
+        properties:
+          documentMetadata: false
+      - name: LOCALE_SID_KEY
+        ordinal: 32
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: locale_sid_key
+        properties:
+          documentMetadata: false
+      - name: MEDIUM_BANNER_PHOTO_URL
+        ordinal: 33
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 219
+        id: medium_banner_photo_url
+        properties:
+          documentMetadata: false
+      - name: MEDIUM_PHOTO_URL
+        ordinal: 34
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 268
+        id: medium_photo_url
+        properties:
+          documentMetadata: false
+      - name: NAME
+        ordinal: 35
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        id: name
+        properties:
+          documentMetadata: false
+      - name: NUMBER_OF_FAILED_LOGINS
+        ordinal: 36
+        nullable: true
+        datatype:
+          type: INT8
+          originalTypeFull: BIGINT
+        id: number_of_failed_logins
+        properties:
+          documentMetadata: false
+      - name: OUT_OF_OFFICE_MESSAGE
+        ordinal: 37
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 1
+          originalTypeFull: NVARCHAR(1)
+        id: out_of_office_message
+        properties:
+          documentMetadata: false
+      - name: PROFILE_ID
+        ordinal: 38
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 18
+          originalTypeFull: NVARCHAR(18)
+        id: profile_id
+        properties:
+          documentMetadata: false
+      - name: RECEIVES_ADMIN_INFO_EMAILS
+        ordinal: 39
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: receives_admin_info_emails
+        properties:
+          documentMetadata: false
+      - name: RECEIVES_INFO_EMAILS
+        ordinal: 40
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: receives_info_emails
+        properties:
+          documentMetadata: false
+      - name: SENDER_NAME
+        ordinal: 41
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: sender_name
+        properties:
+          documentMetadata: false
+      - name: SMALL_BANNER_PHOTO_URL
+        ordinal: 42
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 219
+        id: small_banner_photo_url
+        properties:
+          documentMetadata: false
+      - name: SMALL_PHOTO_URL
+        ordinal: 43
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 280
+        id: small_photo_url
+        properties:
+          documentMetadata: false
+      - name: SYSTEM_MODSTAMP
+        ordinal: 44
+        nullable: true
+        datatype:
+          type: DATETIME
+          originalTypeFull: TIMESTAMP_NTZ(0)
+        id: system_modstamp
+        properties:
+          documentMetadata: false
+      - name: TIME_ZONE_SID_KEY
+        ordinal: 45
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 19
+          originalTypeFull: NVARCHAR(19)
+        id: time_zone_sid_key
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_CALL_CENTER_AUTO_LOGIN
+        ordinal: 46
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_call_center_auto_login
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_INTERACTION_USER
+        ordinal: 47
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_interaction_user
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_JIGSAW_PROSPECTING_USER
+        ordinal: 48
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_jigsaw_prospecting_user
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_KNOWLEDGE_USER
+        ordinal: 49
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_knowledge_user
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_MARKETING_USER
+        ordinal: 50
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_marketing_user
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_OFFLINE_USER
+        ordinal: 51
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_offline_user
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_SFCONTENT_USER
+        ordinal: 52
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_sfcontent_user
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_SITEFORCE_CONTRIBUTOR_USER
+        ordinal: 53
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_siteforce_contributor_user
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_SITEFORCE_PUBLISHER_USER
+        ordinal: 54
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_siteforce_publisher_user
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_SUPPORT_USER
+        ordinal: 55
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_support_user
+        properties:
+          documentMetadata: false
+      - name: USER_PERMISSIONS_WORK_DOT_COM_USER_FEATURE
+        ordinal: 56
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_permissions_work_dot_com_user_feature
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_ACTIVITY_REMINDERS_POPUP
+        ordinal: 57
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_activity_reminders_popup
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_APEX_PAGES_DEVELOPER_MODE
+        ordinal: 58
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_apex_pages_developer_mode
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_CACHE_DIAGNOSTICS
+        ordinal: 59
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_cache_diagnostics
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_CONTENT_EMAIL_AS_AND_WHEN
+        ordinal: 60
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_content_email_as_and_when
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_CONTENT_NO_EMAIL
+        ordinal: 61
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_content_no_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_CREATE_LEXAPPS_WTSHOWN
+        ordinal: 62
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_create_lexapps_wtshown
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DIS_COMMENT_AFTER_LIKE_EMAIL
+        ordinal: 63
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_dis_comment_after_like_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DIS_MENTIONS_COMMENT_EMAIL
+        ordinal: 64
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_dis_mentions_comment_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DIS_PROF_POST_COMMENT_EMAIL
+        ordinal: 65
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_dis_prof_post_comment_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_ALL_FEEDS_EMAIL
+        ordinal: 66
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_all_feeds_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_BOOKMARK_EMAIL
+        ordinal: 67
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_bookmark_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_CHANGE_COMMENT_EMAIL
+        ordinal: 68
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_change_comment_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_ENDORSEMENT_EMAIL
+        ordinal: 69
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_endorsement_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_FILE_SHARE_NOTIFICATIONS_FOR_API
+        ordinal: 70
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_file_share_notifications_for_api
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_FOLLOWERS_EMAIL
+        ordinal: 71
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_followers_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_LATER_COMMENT_EMAIL
+        ordinal: 72
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_later_comment_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_LIKE_EMAIL
+        ordinal: 73
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_like_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_MENTIONS_POST_EMAIL
+        ordinal: 74
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_mentions_post_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_MESSAGE_EMAIL
+        ordinal: 75
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_message_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_PROFILE_POST_EMAIL
+        ordinal: 76
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_profile_post_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_DISABLE_SHARE_POST_EMAIL
+        ordinal: 77
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_disable_share_post_email
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_ENABLE_AUTO_SUB_FOR_FEEDS
+        ordinal: 78
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_enable_auto_sub_for_feeds
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_EVENT_REMINDERS_CHECKBOX_DEFAULT
+        ordinal: 79
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_event_reminders_checkbox_default
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_EXCLUDE_MAIL_APP_ATTACHMENTS
+        ordinal: 80
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_exclude_mail_app_attachments
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_FAVORITES_SHOW_TOP_FAVORITES
+        ordinal: 81
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_favorites_show_top_favorites
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_FAVORITES_WTSHOWN
+        ordinal: 82
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_favorites_wtshown
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_GLOBAL_NAV_BAR_WTSHOWN
+        ordinal: 83
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_global_nav_bar_wtshown
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_GLOBAL_NAV_GRID_MENU_WTSHOWN
+        ordinal: 84
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_global_nav_grid_menu_wtshown
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HAS_CELEBRATION_BADGE
+        ordinal: 85
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_has_celebration_badge
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HIDE_BIGGER_PHOTO_CALLOUT
+        ordinal: 86
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_hide_bigger_photo_callout
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HIDE_CHATTER_ONBOARDING_SPLASH
+        ordinal: 87
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_hide_chatter_onboarding_splash
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HIDE_CSNDESKTOP_TASK
+        ordinal: 88
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_hide_csndesktop_task
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HIDE_CSNGET_CHATTER_MOBILE_TASK
+        ordinal: 89
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_hide_csnget_chatter_mobile_task
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HIDE_END_USER_ONBOARDING_ASSISTANT_MODAL
+        ordinal: 90
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_hide_end_user_onboarding_assistant_modal
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HIDE_LEGACY_RETIREMENT_MODAL
+        ordinal: 91
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_hide_legacy_retirement_modal
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HIDE_LIGHTNING_MIGRATION_MODAL
+        ordinal: 92
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_hide_lightning_migration_modal
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HIDE_S1_BROWSER_UI
+        ordinal: 93
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_hide_s1_browser_ui
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HIDE_SECOND_CHATTER_ONBOARDING_SPLASH
+        ordinal: 94
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_hide_second_chatter_onboarding_splash
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_HIDE_SFX_WELCOME_MAT
+        ordinal: 95
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_hide_sfx_welcome_mat
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_JIGSAW_LIST_USER
+        ordinal: 96
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_jigsaw_list_user
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_LIGHTNING_EXPERIENCE_PREFERRED
+        ordinal: 97
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_lightning_experience_preferred
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_NATIVE_EMAIL_CLIENT
+        ordinal: 98
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_native_email_client
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_NEW_LIGHTNING_REPORT_RUN_PAGE_ENABLED
+        ordinal: 99
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_new_lightning_report_run_page_enabled
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_PATH_ASSISTANT_COLLAPSED
+        ordinal: 100
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_path_assistant_collapsed
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_PREVIEW_CUSTOM_THEME
+        ordinal: 101
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_preview_custom_theme
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_PREVIEW_LIGHTNING
+        ordinal: 102
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_preview_lightning
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_RECEIVE_NO_NOTIFICATIONS_AS_APPROVER
+        ordinal: 103
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_receive_no_notifications_as_approver
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_RECEIVE_NOTIFICATIONS_AS_DELEGATED_APPROVER
+        ordinal: 104
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_receive_notifications_as_delegated_approver
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_RECORD_HOME_RESERVED_WTSHOWN
+        ordinal: 105
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_record_home_reserved_wtshown
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_RECORD_HOME_SECTION_COLLAPSE_WTSHOWN
+        ordinal: 106
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_record_home_section_collapse_wtshown
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_REMINDER_SOUND_OFF
+        ordinal: 107
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_reminder_sound_off
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_CITY_TO_EXTERNAL_USERS
+        ordinal: 108
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_city_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_CITY_TO_GUEST_USERS
+        ordinal: 109
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_city_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_COUNTRY_TO_EXTERNAL_USERS
+        ordinal: 110
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_country_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_COUNTRY_TO_GUEST_USERS
+        ordinal: 111
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_country_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_EMAIL_TO_EXTERNAL_USERS
+        ordinal: 112
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_email_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_EMAIL_TO_GUEST_USERS
+        ordinal: 113
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_email_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_FAX_TO_EXTERNAL_USERS
+        ordinal: 114
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_fax_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_FAX_TO_GUEST_USERS
+        ordinal: 115
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_fax_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_MANAGER_TO_EXTERNAL_USERS
+        ordinal: 116
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_manager_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_MANAGER_TO_GUEST_USERS
+        ordinal: 117
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_manager_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_EXTERNAL_USERS
+        ordinal: 118
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_mobile_phone_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_GUEST_USERS
+        ordinal: 119
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_mobile_phone_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_POSTAL_CODE_TO_EXTERNAL_USERS
+        ordinal: 120
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_postal_code_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_POSTAL_CODE_TO_GUEST_USERS
+        ordinal: 121
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_postal_code_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_PROFILE_PIC_TO_GUEST_USERS
+        ordinal: 122
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_profile_pic_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_STATE_TO_EXTERNAL_USERS
+        ordinal: 123
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_state_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_STATE_TO_GUEST_USERS
+        ordinal: 124
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_state_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_EXTERNAL_USERS
+        ordinal: 125
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_street_address_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_GUEST_USERS
+        ordinal: 126
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_street_address_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_TITLE_TO_EXTERNAL_USERS
+        ordinal: 127
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_title_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_TITLE_TO_GUEST_USERS
+        ordinal: 128
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_title_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_WORK_PHONE_TO_EXTERNAL_USERS
+        ordinal: 129
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_work_phone_to_external_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SHOW_WORK_PHONE_TO_GUEST_USERS
+        ordinal: 130
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_show_work_phone_to_guest_users
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SORT_FEED_BY_COMMENT
+        ordinal: 131
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_sort_feed_by_comment
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SRHOVERRIDE_ACTIVITIES
+        ordinal: 132
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_srhoverride_activities
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SUPPRESS_EVENT_SFXREMINDERS
+        ordinal: 133
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_suppress_event_sfxreminders
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_SUPPRESS_TASK_SFXREMINDERS
+        ordinal: 134
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_suppress_task_sfxreminders
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_TASK_REMINDERS_CHECKBOX_DEFAULT
+        ordinal: 135
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_task_reminders_checkbox_default
+        properties:
+          documentMetadata: false
+      - name: USER_PREFERENCES_USER_DEBUG_MODE_PREF
+        ordinal: 136
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: user_preferences_user_debug_mode_pref
+        properties:
+          documentMetadata: false
+      - name: USER_TYPE
+        ordinal: 137
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: user_type
+        properties:
+          documentMetadata: false
+      - name: USERNAME
+        ordinal: 138
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 261
+        id: username
+        properties:
+          documentMetadata: false
+    entityId: ''
+  dimensionDatasetSettings:
+    type: TYPE2
+    rootDataEntityId:
+      datasetId: user-wyas
+      name: USER
+      taskId: salesforce_transform-aaqj
+    mapping:
+      columns:
+        - columnName: ABOUT_ME
+          type: NONE
+          expression:
+            expressionStatement: ${ABOUT_ME}
+            alias:
+              - name: ABOUT_ME
+                value: ABOUT_ME
+        - columnName: ADDRESS_COUNTRY
+          type: NONE
+          expression:
+            expressionStatement: ${ADDRESS_COUNTRY}
+            alias:
+              - name: ADDRESS_COUNTRY
+                value: ADDRESS_COUNTRY
+        - columnName: ALIAS
+          type: NONE
+          expression:
+            expressionStatement: ${ALIAS}
+            alias:
+              - name: ALIAS
+                value: ALIAS
+        - columnName: BADGE_TEXT
+          type: NONE
+          expression:
+            expressionStatement: ${BADGE_TEXT}
+            alias:
+              - name: BADGE_TEXT
+                value: BADGE_TEXT
+        - columnName: BANNER_PHOTO_URL
+          type: NONE
+          expression:
+            expressionStatement: ${BANNER_PHOTO_URL}
+            alias:
+              - name: BANNER_PHOTO_URL
+                value: BANNER_PHOTO_URL
+        - columnName: COMMUNITY_NICKNAME
+          type: NONE
+          expression:
+            expressionStatement: ${COMMUNITY_NICKNAME}
+            alias:
+              - name: COMMUNITY_NICKNAME
+                value: COMMUNITY_NICKNAME
+        - columnName: COMPANY_NAME
+          type: NONE
+          expression:
+            expressionStatement: ${COMPANY_NAME}
+            alias:
+              - name: COMPANY_NAME
+                value: COMPANY_NAME
+        - columnName: COUNTRY
+          type: NONE
+          expression:
+            expressionStatement: ${COUNTRY}
+            alias:
+              - name: COUNTRY
+                value: COUNTRY
+        - columnName: CREATED_BY_ID
+          type: NONE
+          expression:
+            expressionStatement: ${CREATED_BY_ID}
+            alias:
+              - name: CREATED_BY_ID
+                value: CREATED_BY_ID
+        - columnName: CREATED_DATE
+          type: NONE
+          expression:
+            expressionStatement: ${CREATED_DATE}
+            alias:
+              - name: CREATED_DATE
+                value: CREATED_DATE
+        - columnName: DEFAULT_GROUP_NOTIFICATION_FREQUENCY
+          type: NONE
+          expression:
+            expressionStatement: ${DEFAULT_GROUP_NOTIFICATION_FREQUENCY}
+            alias:
+              - name: DEFAULT_GROUP_NOTIFICATION_FREQUENCY
+                value: DEFAULT_GROUP_NOTIFICATION_FREQUENCY
+        - columnName: DIGEST_FREQUENCY
+          type: NONE
+          expression:
+            expressionStatement: ${DIGEST_FREQUENCY}
+            alias:
+              - name: DIGEST_FREQUENCY
+                value: DIGEST_FREQUENCY
+        - columnName: EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${EMAIL}
+            alias:
+              - name: EMAIL
+                value: EMAIL
+        - columnName: EMAIL_ENCODING_KEY
+          type: NONE
+          expression:
+            expressionStatement: ${EMAIL_ENCODING_KEY}
+            alias:
+              - name: EMAIL_ENCODING_KEY
+                value: EMAIL_ENCODING_KEY
+        - columnName: EMAIL_PREFERENCES_AUTO_BCC
+          type: NONE
+          expression:
+            expressionStatement: ${EMAIL_PREFERENCES_AUTO_BCC}
+            alias:
+              - name: EMAIL_PREFERENCES_AUTO_BCC
+                value: EMAIL_PREFERENCES_AUTO_BCC
+        - columnName: EMAIL_PREFERENCES_AUTO_BCC_STAY_IN_TOUCH
+          type: NONE
+          expression:
+            expressionStatement: ${EMAIL_PREFERENCES_AUTO_BCC_STAY_IN_TOUCH}
+            alias:
+              - name: EMAIL_PREFERENCES_AUTO_BCC_STAY_IN_TOUCH
+                value: EMAIL_PREFERENCES_AUTO_BCC_STAY_IN_TOUCH
+        - columnName: EMAIL_PREFERENCES_STAY_IN_TOUCH_REMINDER
+          type: NONE
+          expression:
+            expressionStatement: ${EMAIL_PREFERENCES_STAY_IN_TOUCH_REMINDER}
+            alias:
+              - name: EMAIL_PREFERENCES_STAY_IN_TOUCH_REMINDER
+                value: EMAIL_PREFERENCES_STAY_IN_TOUCH_REMINDER
+        - columnName: FIRST_NAME
+          type: NONE
+          expression:
+            expressionStatement: ${FIRST_NAME}
+            alias:
+              - name: FIRST_NAME
+                value: FIRST_NAME
+        - columnName: FORECAST_ENABLED
+          type: NONE
+          expression:
+            expressionStatement: ${FORECAST_ENABLED}
+            alias:
+              - name: FORECAST_ENABLED
+                value: FORECAST_ENABLED
+        - columnName: FULL_PHOTO_URL
+          type: NONE
+          expression:
+            expressionStatement: ${FULL_PHOTO_URL}
+            alias:
+              - name: FULL_PHOTO_URL
+                value: FULL_PHOTO_URL
+        - columnName: USER_ID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${USER_ID}
+            alias:
+              - name: USER_ID
+                value: USER_ID
+        - columnName: IS_ACTIVE
+          type: NONE
+          expression:
+            expressionStatement: ${IS_ACTIVE}
+            alias:
+              - name: IS_ACTIVE
+                value: IS_ACTIVE
+        - columnName: IS_EXT_INDICATOR_VISIBLE
+          type: NONE
+          expression:
+            expressionStatement: ${IS_EXT_INDICATOR_VISIBLE}
+            alias:
+              - name: IS_EXT_INDICATOR_VISIBLE
+                value: IS_EXT_INDICATOR_VISIBLE
+        - columnName: IS_PROFILE_PHOTO_ACTIVE
+          type: NONE
+          expression:
+            expressionStatement: ${IS_PROFILE_PHOTO_ACTIVE}
+            alias:
+              - name: IS_PROFILE_PHOTO_ACTIVE
+                value: IS_PROFILE_PHOTO_ACTIVE
+        - columnName: JIGSAW_IMPORT_LIMIT_OVERRIDE
+          type: NONE
+          expression:
+            expressionStatement: ${JIGSAW_IMPORT_LIMIT_OVERRIDE}
+            alias:
+              - name: JIGSAW_IMPORT_LIMIT_OVERRIDE
+                value: JIGSAW_IMPORT_LIMIT_OVERRIDE
+        - columnName: LANGUAGE_LOCALE_KEY
+          type: NONE
+          expression:
+            expressionStatement: ${LANGUAGE_LOCALE_KEY}
+            alias:
+              - name: LANGUAGE_LOCALE_KEY
+                value: LANGUAGE_LOCALE_KEY
+        - columnName: LAST_LOGIN_DATE
+          type: NONE
+          expression:
+            expressionStatement: ${LAST_LOGIN_DATE}
+            alias:
+              - name: LAST_LOGIN_DATE
+                value: LAST_LOGIN_DATE
+        - columnName: LAST_MODIFIED_BY_ID
+          type: NONE
+          expression:
+            expressionStatement: ${LAST_MODIFIED_BY_ID}
+            alias:
+              - name: LAST_MODIFIED_BY_ID
+                value: LAST_MODIFIED_BY_ID
+        - columnName: LAST_MODIFIED_DATE
+          type: NONE
+          expression:
+            expressionStatement: ${LAST_MODIFIED_DATE}
+            alias:
+              - name: LAST_MODIFIED_DATE
+                value: LAST_MODIFIED_DATE
+        - columnName: LAST_NAME
+          type: NONE
+          expression:
+            expressionStatement: ${LAST_NAME}
+            alias:
+              - name: LAST_NAME
+                value: LAST_NAME
+        - columnName: LAST_PASSWORD_CHANGE_DATE
+          type: NONE
+          expression:
+            expressionStatement: ${LAST_PASSWORD_CHANGE_DATE}
+            alias:
+              - name: LAST_PASSWORD_CHANGE_DATE
+                value: LAST_PASSWORD_CHANGE_DATE
+        - columnName: LOCALE_SID_KEY
+          type: NONE
+          expression:
+            expressionStatement: ${LOCALE_SID_KEY}
+            alias:
+              - name: LOCALE_SID_KEY
+                value: LOCALE_SID_KEY
+        - columnName: MEDIUM_BANNER_PHOTO_URL
+          type: NONE
+          expression:
+            expressionStatement: ${MEDIUM_BANNER_PHOTO_URL}
+            alias:
+              - name: MEDIUM_BANNER_PHOTO_URL
+                value: MEDIUM_BANNER_PHOTO_URL
+        - columnName: MEDIUM_PHOTO_URL
+          type: NONE
+          expression:
+            expressionStatement: ${MEDIUM_PHOTO_URL}
+            alias:
+              - name: MEDIUM_PHOTO_URL
+                value: MEDIUM_PHOTO_URL
+        - columnName: NAME
+          type: NONE
+          expression:
+            expressionStatement: ${NAME}
+            alias:
+              - name: NAME
+                value: NAME
+        - columnName: NUMBER_OF_FAILED_LOGINS
+          type: NONE
+          expression:
+            expressionStatement: ${NUMBER_OF_FAILED_LOGINS}
+            alias:
+              - name: NUMBER_OF_FAILED_LOGINS
+                value: NUMBER_OF_FAILED_LOGINS
+        - columnName: OUT_OF_OFFICE_MESSAGE
+          type: NONE
+          expression:
+            expressionStatement: ${OUT_OF_OFFICE_MESSAGE}
+            alias:
+              - name: OUT_OF_OFFICE_MESSAGE
+                value: OUT_OF_OFFICE_MESSAGE
+        - columnName: PROFILE_ID
+          type: NONE
+          expression:
+            expressionStatement: ${PROFILE_ID}
+            alias:
+              - name: PROFILE_ID
+                value: PROFILE_ID
+        - columnName: RECEIVES_ADMIN_INFO_EMAILS
+          type: NONE
+          expression:
+            expressionStatement: ${RECEIVES_ADMIN_INFO_EMAILS}
+            alias:
+              - name: RECEIVES_ADMIN_INFO_EMAILS
+                value: RECEIVES_ADMIN_INFO_EMAILS
+        - columnName: RECEIVES_INFO_EMAILS
+          type: NONE
+          expression:
+            expressionStatement: ${RECEIVES_INFO_EMAILS}
+            alias:
+              - name: RECEIVES_INFO_EMAILS
+                value: RECEIVES_INFO_EMAILS
+        - columnName: SENDER_NAME
+          type: NONE
+          expression:
+            expressionStatement: ${SENDER_NAME}
+            alias:
+              - name: SENDER_NAME
+                value: SENDER_NAME
+        - columnName: SMALL_BANNER_PHOTO_URL
+          type: NONE
+          expression:
+            expressionStatement: ${SMALL_BANNER_PHOTO_URL}
+            alias:
+              - name: SMALL_BANNER_PHOTO_URL
+                value: SMALL_BANNER_PHOTO_URL
+        - columnName: SMALL_PHOTO_URL
+          type: NONE
+          expression:
+            expressionStatement: ${SMALL_PHOTO_URL}
+            alias:
+              - name: SMALL_PHOTO_URL
+                value: SMALL_PHOTO_URL
+        - columnName: SYSTEM_MODSTAMP
+          type: NONE
+          expression:
+            expressionStatement: ${SYSTEM_MODSTAMP}
+            alias:
+              - name: SYSTEM_MODSTAMP
+                value: SYSTEM_MODSTAMP
+        - columnName: TIME_ZONE_SID_KEY
+          type: NONE
+          expression:
+            expressionStatement: ${TIME_ZONE_SID_KEY}
+            alias:
+              - name: TIME_ZONE_SID_KEY
+                value: TIME_ZONE_SID_KEY
+        - columnName: USER_PERMISSIONS_CALL_CENTER_AUTO_LOGIN
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_CALL_CENTER_AUTO_LOGIN}
+            alias:
+              - name: USER_PERMISSIONS_CALL_CENTER_AUTO_LOGIN
+                value: USER_PERMISSIONS_CALL_CENTER_AUTO_LOGIN
+        - columnName: USER_PERMISSIONS_INTERACTION_USER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_INTERACTION_USER}
+            alias:
+              - name: USER_PERMISSIONS_INTERACTION_USER
+                value: USER_PERMISSIONS_INTERACTION_USER
+        - columnName: USER_PERMISSIONS_JIGSAW_PROSPECTING_USER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_JIGSAW_PROSPECTING_USER}
+            alias:
+              - name: USER_PERMISSIONS_JIGSAW_PROSPECTING_USER
+                value: USER_PERMISSIONS_JIGSAW_PROSPECTING_USER
+        - columnName: USER_PERMISSIONS_KNOWLEDGE_USER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_KNOWLEDGE_USER}
+            alias:
+              - name: USER_PERMISSIONS_KNOWLEDGE_USER
+                value: USER_PERMISSIONS_KNOWLEDGE_USER
+        - columnName: USER_PERMISSIONS_MARKETING_USER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_MARKETING_USER}
+            alias:
+              - name: USER_PERMISSIONS_MARKETING_USER
+                value: USER_PERMISSIONS_MARKETING_USER
+        - columnName: USER_PERMISSIONS_OFFLINE_USER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_OFFLINE_USER}
+            alias:
+              - name: USER_PERMISSIONS_OFFLINE_USER
+                value: USER_PERMISSIONS_OFFLINE_USER
+        - columnName: USER_PERMISSIONS_SFCONTENT_USER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_SFCONTENT_USER}
+            alias:
+              - name: USER_PERMISSIONS_SFCONTENT_USER
+                value: USER_PERMISSIONS_SFCONTENT_USER
+        - columnName: USER_PERMISSIONS_SITEFORCE_CONTRIBUTOR_USER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_SITEFORCE_CONTRIBUTOR_USER}
+            alias:
+              - name: USER_PERMISSIONS_SITEFORCE_CONTRIBUTOR_USER
+                value: USER_PERMISSIONS_SITEFORCE_CONTRIBUTOR_USER
+        - columnName: USER_PERMISSIONS_SITEFORCE_PUBLISHER_USER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_SITEFORCE_PUBLISHER_USER}
+            alias:
+              - name: USER_PERMISSIONS_SITEFORCE_PUBLISHER_USER
+                value: USER_PERMISSIONS_SITEFORCE_PUBLISHER_USER
+        - columnName: USER_PERMISSIONS_SUPPORT_USER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_SUPPORT_USER}
+            alias:
+              - name: USER_PERMISSIONS_SUPPORT_USER
+                value: USER_PERMISSIONS_SUPPORT_USER
+        - columnName: USER_PERMISSIONS_WORK_DOT_COM_USER_FEATURE
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PERMISSIONS_WORK_DOT_COM_USER_FEATURE}
+            alias:
+              - name: USER_PERMISSIONS_WORK_DOT_COM_USER_FEATURE
+                value: USER_PERMISSIONS_WORK_DOT_COM_USER_FEATURE
+        - columnName: USER_PREFERENCES_ACTIVITY_REMINDERS_POPUP
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_ACTIVITY_REMINDERS_POPUP}
+            alias:
+              - name: USER_PREFERENCES_ACTIVITY_REMINDERS_POPUP
+                value: USER_PREFERENCES_ACTIVITY_REMINDERS_POPUP
+        - columnName: USER_PREFERENCES_APEX_PAGES_DEVELOPER_MODE
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_APEX_PAGES_DEVELOPER_MODE}
+            alias:
+              - name: USER_PREFERENCES_APEX_PAGES_DEVELOPER_MODE
+                value: USER_PREFERENCES_APEX_PAGES_DEVELOPER_MODE
+        - columnName: USER_PREFERENCES_CACHE_DIAGNOSTICS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_CACHE_DIAGNOSTICS}
+            alias:
+              - name: USER_PREFERENCES_CACHE_DIAGNOSTICS
+                value: USER_PREFERENCES_CACHE_DIAGNOSTICS
+        - columnName: USER_PREFERENCES_CONTENT_EMAIL_AS_AND_WHEN
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_CONTENT_EMAIL_AS_AND_WHEN}
+            alias:
+              - name: USER_PREFERENCES_CONTENT_EMAIL_AS_AND_WHEN
+                value: USER_PREFERENCES_CONTENT_EMAIL_AS_AND_WHEN
+        - columnName: USER_PREFERENCES_CONTENT_NO_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_CONTENT_NO_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_CONTENT_NO_EMAIL
+                value: USER_PREFERENCES_CONTENT_NO_EMAIL
+        - columnName: USER_PREFERENCES_CREATE_LEXAPPS_WTSHOWN
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_CREATE_LEXAPPS_WTSHOWN}
+            alias:
+              - name: USER_PREFERENCES_CREATE_LEXAPPS_WTSHOWN
+                value: USER_PREFERENCES_CREATE_LEXAPPS_WTSHOWN
+        - columnName: USER_PREFERENCES_DIS_COMMENT_AFTER_LIKE_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DIS_COMMENT_AFTER_LIKE_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DIS_COMMENT_AFTER_LIKE_EMAIL
+                value: USER_PREFERENCES_DIS_COMMENT_AFTER_LIKE_EMAIL
+        - columnName: USER_PREFERENCES_DIS_MENTIONS_COMMENT_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DIS_MENTIONS_COMMENT_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DIS_MENTIONS_COMMENT_EMAIL
+                value: USER_PREFERENCES_DIS_MENTIONS_COMMENT_EMAIL
+        - columnName: USER_PREFERENCES_DIS_PROF_POST_COMMENT_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DIS_PROF_POST_COMMENT_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DIS_PROF_POST_COMMENT_EMAIL
+                value: USER_PREFERENCES_DIS_PROF_POST_COMMENT_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_ALL_FEEDS_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_ALL_FEEDS_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_ALL_FEEDS_EMAIL
+                value: USER_PREFERENCES_DISABLE_ALL_FEEDS_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_BOOKMARK_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_BOOKMARK_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_BOOKMARK_EMAIL
+                value: USER_PREFERENCES_DISABLE_BOOKMARK_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_CHANGE_COMMENT_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_CHANGE_COMMENT_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_CHANGE_COMMENT_EMAIL
+                value: USER_PREFERENCES_DISABLE_CHANGE_COMMENT_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_ENDORSEMENT_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_ENDORSEMENT_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_ENDORSEMENT_EMAIL
+                value: USER_PREFERENCES_DISABLE_ENDORSEMENT_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_FILE_SHARE_NOTIFICATIONS_FOR_API
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_FILE_SHARE_NOTIFICATIONS_FOR_API}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_FILE_SHARE_NOTIFICATIONS_FOR_API
+                value: USER_PREFERENCES_DISABLE_FILE_SHARE_NOTIFICATIONS_FOR_API
+        - columnName: USER_PREFERENCES_DISABLE_FOLLOWERS_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_FOLLOWERS_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_FOLLOWERS_EMAIL
+                value: USER_PREFERENCES_DISABLE_FOLLOWERS_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_LATER_COMMENT_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_LATER_COMMENT_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_LATER_COMMENT_EMAIL
+                value: USER_PREFERENCES_DISABLE_LATER_COMMENT_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_LIKE_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_LIKE_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_LIKE_EMAIL
+                value: USER_PREFERENCES_DISABLE_LIKE_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_MENTIONS_POST_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_MENTIONS_POST_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_MENTIONS_POST_EMAIL
+                value: USER_PREFERENCES_DISABLE_MENTIONS_POST_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_MESSAGE_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_MESSAGE_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_MESSAGE_EMAIL
+                value: USER_PREFERENCES_DISABLE_MESSAGE_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_PROFILE_POST_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_PROFILE_POST_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_PROFILE_POST_EMAIL
+                value: USER_PREFERENCES_DISABLE_PROFILE_POST_EMAIL
+        - columnName: USER_PREFERENCES_DISABLE_SHARE_POST_EMAIL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_DISABLE_SHARE_POST_EMAIL}
+            alias:
+              - name: USER_PREFERENCES_DISABLE_SHARE_POST_EMAIL
+                value: USER_PREFERENCES_DISABLE_SHARE_POST_EMAIL
+        - columnName: USER_PREFERENCES_ENABLE_AUTO_SUB_FOR_FEEDS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_ENABLE_AUTO_SUB_FOR_FEEDS}
+            alias:
+              - name: USER_PREFERENCES_ENABLE_AUTO_SUB_FOR_FEEDS
+                value: USER_PREFERENCES_ENABLE_AUTO_SUB_FOR_FEEDS
+        - columnName: USER_PREFERENCES_EVENT_REMINDERS_CHECKBOX_DEFAULT
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_EVENT_REMINDERS_CHECKBOX_DEFAULT}
+            alias:
+              - name: USER_PREFERENCES_EVENT_REMINDERS_CHECKBOX_DEFAULT
+                value: USER_PREFERENCES_EVENT_REMINDERS_CHECKBOX_DEFAULT
+        - columnName: USER_PREFERENCES_EXCLUDE_MAIL_APP_ATTACHMENTS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_EXCLUDE_MAIL_APP_ATTACHMENTS}
+            alias:
+              - name: USER_PREFERENCES_EXCLUDE_MAIL_APP_ATTACHMENTS
+                value: USER_PREFERENCES_EXCLUDE_MAIL_APP_ATTACHMENTS
+        - columnName: USER_PREFERENCES_FAVORITES_SHOW_TOP_FAVORITES
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_FAVORITES_SHOW_TOP_FAVORITES}
+            alias:
+              - name: USER_PREFERENCES_FAVORITES_SHOW_TOP_FAVORITES
+                value: USER_PREFERENCES_FAVORITES_SHOW_TOP_FAVORITES
+        - columnName: USER_PREFERENCES_FAVORITES_WTSHOWN
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_FAVORITES_WTSHOWN}
+            alias:
+              - name: USER_PREFERENCES_FAVORITES_WTSHOWN
+                value: USER_PREFERENCES_FAVORITES_WTSHOWN
+        - columnName: USER_PREFERENCES_GLOBAL_NAV_BAR_WTSHOWN
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_GLOBAL_NAV_BAR_WTSHOWN}
+            alias:
+              - name: USER_PREFERENCES_GLOBAL_NAV_BAR_WTSHOWN
+                value: USER_PREFERENCES_GLOBAL_NAV_BAR_WTSHOWN
+        - columnName: USER_PREFERENCES_GLOBAL_NAV_GRID_MENU_WTSHOWN
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_GLOBAL_NAV_GRID_MENU_WTSHOWN}
+            alias:
+              - name: USER_PREFERENCES_GLOBAL_NAV_GRID_MENU_WTSHOWN
+                value: USER_PREFERENCES_GLOBAL_NAV_GRID_MENU_WTSHOWN
+        - columnName: USER_PREFERENCES_HAS_CELEBRATION_BADGE
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HAS_CELEBRATION_BADGE}
+            alias:
+              - name: USER_PREFERENCES_HAS_CELEBRATION_BADGE
+                value: USER_PREFERENCES_HAS_CELEBRATION_BADGE
+        - columnName: USER_PREFERENCES_HIDE_BIGGER_PHOTO_CALLOUT
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HIDE_BIGGER_PHOTO_CALLOUT}
+            alias:
+              - name: USER_PREFERENCES_HIDE_BIGGER_PHOTO_CALLOUT
+                value: USER_PREFERENCES_HIDE_BIGGER_PHOTO_CALLOUT
+        - columnName: USER_PREFERENCES_HIDE_CHATTER_ONBOARDING_SPLASH
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HIDE_CHATTER_ONBOARDING_SPLASH}
+            alias:
+              - name: USER_PREFERENCES_HIDE_CHATTER_ONBOARDING_SPLASH
+                value: USER_PREFERENCES_HIDE_CHATTER_ONBOARDING_SPLASH
+        - columnName: USER_PREFERENCES_HIDE_CSNDESKTOP_TASK
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HIDE_CSNDESKTOP_TASK}
+            alias:
+              - name: USER_PREFERENCES_HIDE_CSNDESKTOP_TASK
+                value: USER_PREFERENCES_HIDE_CSNDESKTOP_TASK
+        - columnName: USER_PREFERENCES_HIDE_CSNGET_CHATTER_MOBILE_TASK
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HIDE_CSNGET_CHATTER_MOBILE_TASK}
+            alias:
+              - name: USER_PREFERENCES_HIDE_CSNGET_CHATTER_MOBILE_TASK
+                value: USER_PREFERENCES_HIDE_CSNGET_CHATTER_MOBILE_TASK
+        - columnName: USER_PREFERENCES_HIDE_END_USER_ONBOARDING_ASSISTANT_MODAL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HIDE_END_USER_ONBOARDING_ASSISTANT_MODAL}
+            alias:
+              - name: USER_PREFERENCES_HIDE_END_USER_ONBOARDING_ASSISTANT_MODAL
+                value: USER_PREFERENCES_HIDE_END_USER_ONBOARDING_ASSISTANT_MODAL
+        - columnName: USER_PREFERENCES_HIDE_LEGACY_RETIREMENT_MODAL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HIDE_LEGACY_RETIREMENT_MODAL}
+            alias:
+              - name: USER_PREFERENCES_HIDE_LEGACY_RETIREMENT_MODAL
+                value: USER_PREFERENCES_HIDE_LEGACY_RETIREMENT_MODAL
+        - columnName: USER_PREFERENCES_HIDE_LIGHTNING_MIGRATION_MODAL
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HIDE_LIGHTNING_MIGRATION_MODAL}
+            alias:
+              - name: USER_PREFERENCES_HIDE_LIGHTNING_MIGRATION_MODAL
+                value: USER_PREFERENCES_HIDE_LIGHTNING_MIGRATION_MODAL
+        - columnName: USER_PREFERENCES_HIDE_S1_BROWSER_UI
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HIDE_S1_BROWSER_UI}
+            alias:
+              - name: USER_PREFERENCES_HIDE_S1_BROWSER_UI
+                value: USER_PREFERENCES_HIDE_S1_BROWSER_UI
+        - columnName: USER_PREFERENCES_HIDE_SECOND_CHATTER_ONBOARDING_SPLASH
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HIDE_SECOND_CHATTER_ONBOARDING_SPLASH}
+            alias:
+              - name: USER_PREFERENCES_HIDE_SECOND_CHATTER_ONBOARDING_SPLASH
+                value: USER_PREFERENCES_HIDE_SECOND_CHATTER_ONBOARDING_SPLASH
+        - columnName: USER_PREFERENCES_HIDE_SFX_WELCOME_MAT
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_HIDE_SFX_WELCOME_MAT}
+            alias:
+              - name: USER_PREFERENCES_HIDE_SFX_WELCOME_MAT
+                value: USER_PREFERENCES_HIDE_SFX_WELCOME_MAT
+        - columnName: USER_PREFERENCES_JIGSAW_LIST_USER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_JIGSAW_LIST_USER}
+            alias:
+              - name: USER_PREFERENCES_JIGSAW_LIST_USER
+                value: USER_PREFERENCES_JIGSAW_LIST_USER
+        - columnName: USER_PREFERENCES_LIGHTNING_EXPERIENCE_PREFERRED
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_LIGHTNING_EXPERIENCE_PREFERRED}
+            alias:
+              - name: USER_PREFERENCES_LIGHTNING_EXPERIENCE_PREFERRED
+                value: USER_PREFERENCES_LIGHTNING_EXPERIENCE_PREFERRED
+        - columnName: USER_PREFERENCES_NATIVE_EMAIL_CLIENT
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_NATIVE_EMAIL_CLIENT}
+            alias:
+              - name: USER_PREFERENCES_NATIVE_EMAIL_CLIENT
+                value: USER_PREFERENCES_NATIVE_EMAIL_CLIENT
+        - columnName: USER_PREFERENCES_NEW_LIGHTNING_REPORT_RUN_PAGE_ENABLED
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_NEW_LIGHTNING_REPORT_RUN_PAGE_ENABLED}
+            alias:
+              - name: USER_PREFERENCES_NEW_LIGHTNING_REPORT_RUN_PAGE_ENABLED
+                value: USER_PREFERENCES_NEW_LIGHTNING_REPORT_RUN_PAGE_ENABLED
+        - columnName: USER_PREFERENCES_PATH_ASSISTANT_COLLAPSED
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_PATH_ASSISTANT_COLLAPSED}
+            alias:
+              - name: USER_PREFERENCES_PATH_ASSISTANT_COLLAPSED
+                value: USER_PREFERENCES_PATH_ASSISTANT_COLLAPSED
+        - columnName: USER_PREFERENCES_PREVIEW_CUSTOM_THEME
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_PREVIEW_CUSTOM_THEME}
+            alias:
+              - name: USER_PREFERENCES_PREVIEW_CUSTOM_THEME
+                value: USER_PREFERENCES_PREVIEW_CUSTOM_THEME
+        - columnName: USER_PREFERENCES_PREVIEW_LIGHTNING
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_PREVIEW_LIGHTNING}
+            alias:
+              - name: USER_PREFERENCES_PREVIEW_LIGHTNING
+                value: USER_PREFERENCES_PREVIEW_LIGHTNING
+        - columnName: USER_PREFERENCES_RECEIVE_NO_NOTIFICATIONS_AS_APPROVER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_RECEIVE_NO_NOTIFICATIONS_AS_APPROVER}
+            alias:
+              - name: USER_PREFERENCES_RECEIVE_NO_NOTIFICATIONS_AS_APPROVER
+                value: USER_PREFERENCES_RECEIVE_NO_NOTIFICATIONS_AS_APPROVER
+        - columnName: USER_PREFERENCES_RECEIVE_NOTIFICATIONS_AS_DELEGATED_APPROVER
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_RECEIVE_NOTIFICATIONS_AS_DELEGATED_APPROVER}
+            alias:
+              - name: USER_PREFERENCES_RECEIVE_NOTIFICATIONS_AS_DELEGATED_APPROVER
+                value: USER_PREFERENCES_RECEIVE_NOTIFICATIONS_AS_DELEGATED_APPROVER
+        - columnName: USER_PREFERENCES_RECORD_HOME_RESERVED_WTSHOWN
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_RECORD_HOME_RESERVED_WTSHOWN}
+            alias:
+              - name: USER_PREFERENCES_RECORD_HOME_RESERVED_WTSHOWN
+                value: USER_PREFERENCES_RECORD_HOME_RESERVED_WTSHOWN
+        - columnName: USER_PREFERENCES_RECORD_HOME_SECTION_COLLAPSE_WTSHOWN
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_RECORD_HOME_SECTION_COLLAPSE_WTSHOWN}
+            alias:
+              - name: USER_PREFERENCES_RECORD_HOME_SECTION_COLLAPSE_WTSHOWN
+                value: USER_PREFERENCES_RECORD_HOME_SECTION_COLLAPSE_WTSHOWN
+        - columnName: USER_PREFERENCES_REMINDER_SOUND_OFF
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_REMINDER_SOUND_OFF}
+            alias:
+              - name: USER_PREFERENCES_REMINDER_SOUND_OFF
+                value: USER_PREFERENCES_REMINDER_SOUND_OFF
+        - columnName: USER_PREFERENCES_SHOW_CITY_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_CITY_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_CITY_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_CITY_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_CITY_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_CITY_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_CITY_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_CITY_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_COUNTRY_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_COUNTRY_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_COUNTRY_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_COUNTRY_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_COUNTRY_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_COUNTRY_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_COUNTRY_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_COUNTRY_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_EMAIL_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_EMAIL_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_EMAIL_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_EMAIL_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_EMAIL_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_EMAIL_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_EMAIL_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_EMAIL_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_FAX_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_FAX_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_FAX_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_FAX_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_FAX_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_FAX_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_FAX_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_FAX_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_MANAGER_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_MANAGER_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_MANAGER_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_MANAGER_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_MANAGER_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_MANAGER_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_MANAGER_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_MANAGER_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_POSTAL_CODE_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_POSTAL_CODE_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_POSTAL_CODE_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_POSTAL_CODE_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_POSTAL_CODE_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_POSTAL_CODE_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_POSTAL_CODE_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_POSTAL_CODE_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_PROFILE_PIC_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_PROFILE_PIC_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_PROFILE_PIC_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_PROFILE_PIC_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_STATE_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_STATE_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_STATE_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_STATE_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_STATE_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_STATE_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_STATE_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_STATE_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_TITLE_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_TITLE_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_TITLE_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_TITLE_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_TITLE_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_TITLE_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_TITLE_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_TITLE_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SHOW_WORK_PHONE_TO_EXTERNAL_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_WORK_PHONE_TO_EXTERNAL_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_WORK_PHONE_TO_EXTERNAL_USERS
+                value: USER_PREFERENCES_SHOW_WORK_PHONE_TO_EXTERNAL_USERS
+        - columnName: USER_PREFERENCES_SHOW_WORK_PHONE_TO_GUEST_USERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SHOW_WORK_PHONE_TO_GUEST_USERS}
+            alias:
+              - name: USER_PREFERENCES_SHOW_WORK_PHONE_TO_GUEST_USERS
+                value: USER_PREFERENCES_SHOW_WORK_PHONE_TO_GUEST_USERS
+        - columnName: USER_PREFERENCES_SORT_FEED_BY_COMMENT
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SORT_FEED_BY_COMMENT}
+            alias:
+              - name: USER_PREFERENCES_SORT_FEED_BY_COMMENT
+                value: USER_PREFERENCES_SORT_FEED_BY_COMMENT
+        - columnName: USER_PREFERENCES_SRHOVERRIDE_ACTIVITIES
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SRHOVERRIDE_ACTIVITIES}
+            alias:
+              - name: USER_PREFERENCES_SRHOVERRIDE_ACTIVITIES
+                value: USER_PREFERENCES_SRHOVERRIDE_ACTIVITIES
+        - columnName: USER_PREFERENCES_SUPPRESS_EVENT_SFXREMINDERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SUPPRESS_EVENT_SFXREMINDERS}
+            alias:
+              - name: USER_PREFERENCES_SUPPRESS_EVENT_SFXREMINDERS
+                value: USER_PREFERENCES_SUPPRESS_EVENT_SFXREMINDERS
+        - columnName: USER_PREFERENCES_SUPPRESS_TASK_SFXREMINDERS
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_SUPPRESS_TASK_SFXREMINDERS}
+            alias:
+              - name: USER_PREFERENCES_SUPPRESS_TASK_SFXREMINDERS
+                value: USER_PREFERENCES_SUPPRESS_TASK_SFXREMINDERS
+        - columnName: USER_PREFERENCES_TASK_REMINDERS_CHECKBOX_DEFAULT
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_TASK_REMINDERS_CHECKBOX_DEFAULT}
+            alias:
+              - name: USER_PREFERENCES_TASK_REMINDERS_CHECKBOX_DEFAULT
+                value: USER_PREFERENCES_TASK_REMINDERS_CHECKBOX_DEFAULT
+        - columnName: USER_PREFERENCES_USER_DEBUG_MODE_PREF
+          type: NONE
+          expression:
+            expressionStatement: ${USER_PREFERENCES_USER_DEBUG_MODE_PREF}
+            alias:
+              - name: USER_PREFERENCES_USER_DEBUG_MODE_PREF
+                value: USER_PREFERENCES_USER_DEBUG_MODE_PREF
+        - columnName: USER_TYPE
+          type: NONE
+          expression:
+            expressionStatement: ${USER_TYPE}
+            alias:
+              - name: USER_TYPE
+                value: USER_TYPE
+        - columnName: USERNAME
+          type: NONE
+          expression:
+            expressionStatement: ${USERNAME}
+            alias:
+              - name: USERNAME
+                value: USERNAME
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false

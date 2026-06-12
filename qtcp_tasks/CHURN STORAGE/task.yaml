@@ -1,0 +1,12 @@
+properties:
+  name: CHURN STORAGE
+  id: storage-0ivk
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-0ivk.internalSchema}}'
+    taskSchema: '{{task.storage-0ivk.taskSchema}}'
+    databaseName: '{{task.storage-0ivk.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-0ivk.warehouseName}}'

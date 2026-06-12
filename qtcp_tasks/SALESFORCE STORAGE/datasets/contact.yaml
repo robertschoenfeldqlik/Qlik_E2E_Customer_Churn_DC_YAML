@@ -1,0 +1,13 @@
+properties:
+  id: contact-_h7x
+  name: contact
+  inputDatasets:
+    - datasetId: contact
+      taskId: salesforce_landing-_h7t
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: id
+      newColumnName: CONTACT_ID
+      primaryKeyOrdinal: 1
+      nullable: false

@@ -1,0 +1,81 @@
+relationships:
+  - sourceEntity:
+      datasetId: account-iili
+      name: ACCOUNT
+      taskId: salesforce_transform-aaqj
+    targetEntity:
+      datasetId: user-wyas
+      name: USER
+      taskId: salesforce_transform-aaqj
+    columnRelationships:
+      - sourceColumn: OWNER_ID
+        targetColumn: USER_ID
+        sourceColumnId: owner_id
+        targetColumnId: id
+    name: ACCOUNT_USER
+    description: ''
+    id: account_user-qhll
+  - sourceEntity:
+      datasetId: contact-_h70
+      name: CONTACT
+      taskId: salesforce_transform-aaqj
+    targetEntity:
+      datasetId: account-iili
+      name: ACCOUNT
+      taskId: salesforce_transform-aaqj
+    columnRelationships:
+      - sourceColumn: ACCOUNT_ID
+        targetColumn: ACCOUNT_ID
+        sourceColumnId: account_id
+        targetColumnId: id
+    name: CONTACT_ACCOUNT_relation
+    description: ''
+    id: contact_account_relation-3ap-
+  - sourceEntity:
+      datasetId: contact-_h70
+      name: CONTACT
+      taskId: salesforce_transform-aaqj
+    targetEntity:
+      datasetId: user-wyas
+      name: USER
+      taskId: salesforce_transform-aaqj
+    columnRelationships:
+      - sourceColumn: OWNER_ID
+        targetColumn: USER_ID
+        sourceColumnId: owner_id
+        targetColumnId: id
+    name: CONTACT_USER
+    description: ''
+    id: contact_user-3ap9
+  - sourceEntity:
+      datasetId: opportunity-3ap7
+      name: OPPORTUNITY
+      taskId: salesforce_transform-aaqj
+    targetEntity:
+      datasetId: account-iili
+      name: ACCOUNT
+      taskId: salesforce_transform-aaqj
+    columnRelationships:
+      - sourceColumn: ACCOUNT_ID
+        targetColumn: ACCOUNT_ID
+        sourceColumnId: account_id
+        targetColumnId: id
+    name: OPPORTUNITY_ACCOUNT_relation
+    description: ''
+    id: opportunity_account_relation-wyau
+  - sourceEntity:
+      datasetId: opportunity-3ap7
+      name: OPPORTUNITY
+      taskId: salesforce_transform-aaqj
+    targetEntity:
+      datasetId: user-wyas
+      name: USER
+      taskId: salesforce_transform-aaqj
+    columnRelationships:
+      - sourceColumn: OWNER_ID
+        targetColumn: USER_ID
+        sourceColumnId: owner_id
+        targetColumnId: id
+    name: OPPORTUNITY_USER
+    description: ''
+    id: opportunity_user-_h74

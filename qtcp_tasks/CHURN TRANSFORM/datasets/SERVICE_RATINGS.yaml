@@ -1,0 +1,65 @@
+properties:
+  id: service_ratings-drw3
+  name: SERVICE_RATINGS
+  inputDatasets:
+    - datasetId: service_data-kyi1
+      name: SERVICE_DATA
+      taskId: storage-0ivk
+  tableDef:
+    name: SERVICE_RATINGS
+    columns:
+      - name: RATING_CATEGORY
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: STRING
+          length: 5
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(5)
+        id: rating_category
+      - name: ACCOUNT_COUNT
+        ordinal: 2
+        datatype:
+          type: NUMERIC
+          precision: 18
+          originalType: NUMBER
+          originalTypeFull: NUMBER(18,0)
+        id: account_count
+  customDatasetSettings:
+    customSql:
+      expressionStatement: >2
+
+        WITH cte AS (
+          SELECT
+            "ACCOUNTID",
+            "SERVICERATING",
+            CASE
+              WHEN "SERVICERATING" < 5 THEN 'Poor'
+              WHEN "SERVICERATING" >= 5 AND "SERVICERATING" < 10 THEN 'Bad'
+              WHEN "SERVICERATING" >= 10 AND "SERVICERATING" <= 15 THEN 'Good'
+              ELSE 'Great'
+            END AS rating_category
+          FROM
+            ${SERVICE_DATA} sd
+        )
+
+        SELECT
+          rating_category,
+          COUNT(*) AS account_count
+        FROM
+          cte
+        GROUP BY
+          rating_category
+        ORDER BY
+          CASE rating_category
+            WHEN 'Poor' THEN 1
+            WHEN 'Bad' THEN 2
+            WHEN 'Good' THEN 3
+            WHEN 'Great' THEN 4
+          END;
+      alias:
+        - name: SERVICE_DATA
+          value: '{{ref(project.current.projectId)}}$_$storage-0ivk$_$service_data-kyi1'
+    incremental: false
+mappings:
+  mappings: []

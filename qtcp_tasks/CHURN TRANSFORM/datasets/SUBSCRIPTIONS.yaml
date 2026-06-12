@@ -1,0 +1,187 @@
+properties:
+  id: subscriptions-drw1
+  name: SUBSCRIPTIONS
+  inputDatasets:
+    - datasetId: subscriptions-kyi2
+      name: SUBSCRIPTIONS
+      taskId: storage-0ivk
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: SUBSCRIPTIONS
+    columns:
+      - name: ACCOUNTID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 7
+          originalTypeFull: NVARCHAR(7)
+        id: accountid
+      - name: REPEATCUSTOMER
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 3
+          originalTypeFull: NVARCHAR(3)
+        id: repeatcustomer
+      - name: PROMOTION
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 3
+          originalTypeFull: NVARCHAR(3)
+        id: promotion
+      - name: PLANTYPE
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 11
+          originalTypeFull: NVARCHAR(11)
+        id: plantype
+      - name: BASEFEE
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: basefee
+      - name: ADDITIONALFEATURESPEND
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: additionalfeaturespend
+      - name: NUMBEROFPENALTIES
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: numberofpenalties
+      - name: STARTDATE
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: startdate
+      - name: CANCELDATE
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 8
+          originalTypeFull: NVARCHAR(8)
+        id: canceldate
+      - name: STARTMONTH
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 3
+          originalTypeFull: NVARCHAR(3)
+        id: startmonth
+      - name: STARTWEEK
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 3
+          originalTypeFull: NVARCHAR(3)
+        id: startweek
+      - name: CUSTOMERTENURE
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: customertenure
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: subscriptions-kyi2
+        name: subscriptions
+        taskId: storage-0ivk
+      mappingFields:
+        - columnId: accountid
+          expression:
+            expressionStatement: ${ACCOUNTID}
+            alias:
+              - name: ACCOUNTID
+                value: ACCOUNTID
+        - columnId: repeatcustomer
+          expression:
+            expressionStatement: ${REPEATCUSTOMER}
+            alias:
+              - name: REPEATCUSTOMER
+                value: REPEATCUSTOMER
+        - columnId: promotion
+          expression:
+            expressionStatement: ${PROMOTION}
+            alias:
+              - name: PROMOTION
+                value: PROMOTION
+        - columnId: plantype
+          expression:
+            expressionStatement: ${PLANTYPE}
+            alias:
+              - name: PLANTYPE
+                value: PLANTYPE
+        - columnId: basefee
+          expression:
+            expressionStatement: ${BASEFEE}
+            alias:
+              - name: BASEFEE
+                value: BASEFEE
+        - columnId: additionalfeaturespend
+          expression:
+            expressionStatement: ${ADDITIONALFEATURESPEND}
+            alias:
+              - name: ADDITIONALFEATURESPEND
+                value: ADDITIONALFEATURESPEND
+        - columnId: numberofpenalties
+          expression:
+            expressionStatement: ${NUMBEROFPENALTIES}
+            alias:
+              - name: NUMBEROFPENALTIES
+                value: NUMBEROFPENALTIES
+        - columnId: startdate
+          expression:
+            expressionStatement: ${STARTDATE}
+            alias:
+              - name: STARTDATE
+                value: STARTDATE
+        - columnId: canceldate
+          expression:
+            expressionStatement: ${CANCELDATE}
+            alias:
+              - name: CANCELDATE
+                value: CANCELDATE
+        - columnId: startmonth
+          expression:
+            expressionStatement: ${STARTMONTH}
+            alias:
+              - name: STARTMONTH
+                value: STARTMONTH
+        - columnId: startweek
+          expression:
+            expressionStatement: ${STARTWEEK}
+            alias:
+              - name: STARTWEEK
+                value: STARTWEEK
+        - columnId: customertenure
+          expression:
+            expressionStatement: ${CUSTOMERTENURE}
+            alias:
+              - name: CUSTOMERTENURE
+                value: CUSTOMERTENURE
+      id: subscriptions_default_mapping-drw2
+      name: SUBSCRIPTIONS_default_mapping
+      description: ''
